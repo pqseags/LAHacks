@@ -48,6 +48,7 @@
 		DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5718F928CA001289EB /* RegisterViewController.m */; };
 		DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7518F99671001289EB /* SWRevealViewController.m */; };
 		DE3E2F7918F9967E001289EB /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7818F9967E001289EB /* SideBarViewController.m */; };
+		DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7D18F9B0C4001289EB /* HexColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		DE3E2F7518F99671001289EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		DE3E2F7718F9967E001289EB /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
 		DE3E2F7818F9967E001289EB /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
+		DE3E2F7C18F9B0C4001289EB /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
+		DE3E2F7D18F9B0C4001289EB /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 				DE3E2F1418F91551001289EB /* InfoPlist.strings */,
 				DE3E2F1718F91551001289EB /* main.m */,
 				DE3E2F1918F91551001289EB /* TalentTrail-Prefix.pch */,
+				DE3E2F7C18F9B0C4001289EB /* HexColor.h */,
+				DE3E2F7D18F9B0C4001289EB /* HexColor.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				0A02C31218F9571500471161 /* ConnectionCell.m in Sources */,
+				DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */,
 				DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */,
 				0A02C31718F9588600471161 /* ConnectionViewController.m in Sources */,
 				DE3E2F7918F9967E001289EB /* SideBarViewController.m in Sources */,

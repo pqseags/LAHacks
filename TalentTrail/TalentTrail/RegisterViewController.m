@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import "HexColor.h"
 
 @interface RegisterViewController ()
 
@@ -33,6 +34,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.view setBackgroundColor: [HexColor colorWithHexString:@"F48F16"]];
     
     //set delegate of Text Fields to this view controller
     firstNameField.delegate = self;

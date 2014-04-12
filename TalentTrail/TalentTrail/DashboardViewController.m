@@ -8,6 +8,7 @@
 
 #import "DashboardViewController.h"
 #import "SWRevealViewController.h"
+#import "HexColor.h"
 
 @interface DashboardViewController ()
 
@@ -42,7 +43,7 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     //____________________SIDE BAR_______________________
     
-    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
+    self.navigationController.navigationBar.barTintColor = [HexColor colorWithHexString:@"F48F16"];
     self.navigationController.navigationBar.titleTextAttributes= @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 }
 
