@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A02C31218F9571500471161 /* ConnectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02C31118F9571500471161 /* ConnectionCell.m */; };
+		0A02C31618F9588600471161 /* ConnectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C31318F9588600471161 /* ConnectionCell.xib */; };
+		0A02C31718F9588600471161 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02C31518F9588600471161 /* ConnectionViewController.m */; };
+		0A02C32E18F9593100471161 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C31C18F9593100471161 /* apple.png */; };
+		0A02C32F18F9593100471161 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C31D18F9593100471161 /* background.png */; };
+		0A02C33018F9593100471161 /* blue.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C31E18F9593100471161 /* blue.PNG */; };
+		0A02C33118F9593100471161 /* disney.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C31F18F9593100471161 /* disney.png */; };
+		0A02C33218F9593100471161 /* facebook.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32018F9593100471161 /* facebook.gif */; };
+		0A02C33318F9593100471161 /* green.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32118F9593100471161 /* green.PNG */; };
+		0A02C33418F9593100471161 /* intel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32218F9593100471161 /* intel.png */; };
+		0A02C33518F9593100471161 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02C32418F9593100471161 /* JobCell.m */; };
+		0A02C33618F9593100471161 /* koala.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32518F9593100471161 /* koala.png */; };
+		0A02C33718F9593100471161 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32618F9593100471161 /* logo.png */; };
+		0A02C33818F9593100471161 /* microsoft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32718F9593100471161 /* microsoft.png */; };
+		0A02C33918F9593100471161 /* nasa.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32818F9593100471161 /* nasa.png */; };
+		0A02C33A18F9593100471161 /* nvidia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32918F9593100471161 /* nvidia.jpg */; };
+		0A02C33B18F9593100471161 /* orange.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32A18F9593100471161 /* orange.PNG */; };
+		0A02C33C18F9593100471161 /* purple.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32B18F9593100471161 /* purple.PNG */; };
+		0A02C33D18F9593100471161 /* reddish.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32C18F9593100471161 /* reddish.PNG */; };
+		0A02C33E18F9593100471161 /* redi.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32D18F9593100471161 /* redi.PNG */; };
 		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
 		DE3E2F0E18F91551001289EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0D18F91551001289EB /* CoreGraphics.framework */; };
 		DE3E2F1018F91551001289EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0F18F91551001289EB /* UIKit.framework */; };
@@ -24,7 +44,6 @@
 		DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4418F91A55001289EB /* LogInViewController.m */; };
 		DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4718F91E30001289EB /* DashboardViewController.m */; };
 		DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4A18F91E3D001289EB /* JobsViewController.m */; };
-		DE3E2F4E18F91E5C001289EB /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */; };
 		DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5018F91E6E001289EB /* ProfileViewController.m */; };
 		DE3E2F5418F920AF001289EB /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5318F920AF001289EB /* Profile.m */; };
 		DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5718F928CA001289EB /* RegisterViewController.m */; };
@@ -44,6 +63,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A02C31018F9571500471161 /* ConnectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionCell.h; sourceTree = "<group>"; };
+		0A02C31118F9571500471161 /* ConnectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionCell.m; sourceTree = "<group>"; };
+		0A02C31318F9588600471161 /* ConnectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConnectionCell.xib; sourceTree = "<group>"; };
+		0A02C31418F9588600471161 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionViewController.h; sourceTree = "<group>"; };
+		0A02C31518F9588600471161 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionViewController.m; sourceTree = "<group>"; };
+		0A02C31C18F9593100471161 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		0A02C31D18F9593100471161 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		0A02C31E18F9593100471161 /* blue.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.PNG; sourceTree = "<group>"; };
+		0A02C31F18F9593100471161 /* disney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disney.png; sourceTree = "<group>"; };
+		0A02C32018F9593100471161 /* facebook.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = facebook.gif; sourceTree = "<group>"; };
+		0A02C32118F9593100471161 /* green.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.PNG; sourceTree = "<group>"; };
+		0A02C32218F9593100471161 /* intel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intel.png; sourceTree = "<group>"; };
+		0A02C32318F9593100471161 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
+		0A02C32418F9593100471161 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
+		0A02C32518F9593100471161 /* koala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koala.png; sourceTree = "<group>"; };
+		0A02C32618F9593100471161 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		0A02C32718F9593100471161 /* microsoft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microsoft.png; sourceTree = "<group>"; };
+		0A02C32818F9593100471161 /* nasa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nasa.png; sourceTree = "<group>"; };
+		0A02C32918F9593100471161 /* nvidia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nvidia.jpg; sourceTree = "<group>"; };
+		0A02C32A18F9593100471161 /* orange.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.PNG; sourceTree = "<group>"; };
+		0A02C32B18F9593100471161 /* purple.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.PNG; sourceTree = "<group>"; };
+		0A02C32C18F9593100471161 /* reddish.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddish.PNG; sourceTree = "<group>"; };
+		0A02C32D18F9593100471161 /* redi.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redi.PNG; sourceTree = "<group>"; };
 		DE3E2F0818F91551001289EB /* TalentTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3E2F0B18F91551001289EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE3E2F0D18F91551001289EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,8 +111,6 @@
 		DE3E2F4718F91E30001289EB /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		DE3E2F4918F91E3D001289EB /* JobsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsViewController.h; sourceTree = "<group>"; };
 		DE3E2F4A18F91E3D001289EB /* JobsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsViewController.m; sourceTree = "<group>"; };
-		DE3E2F4C18F91E5C001289EB /* ConnectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionsViewController.h; sourceTree = "<group>"; };
-		DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
 		DE3E2F4F18F91E6E001289EB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		DE3E2F5018F91E6E001289EB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		DE3E2F5218F920AF001289EB /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
@@ -142,6 +182,27 @@
 		DE3E2F1118F91551001289EB /* TalentTrail */ = {
 			isa = PBXGroup;
 			children = (
+				0A02C31C18F9593100471161 /* apple.png */,
+				0A02C31D18F9593100471161 /* background.png */,
+				0A02C31E18F9593100471161 /* blue.PNG */,
+				0A02C31F18F9593100471161 /* disney.png */,
+				0A02C32018F9593100471161 /* facebook.gif */,
+				0A02C32118F9593100471161 /* green.PNG */,
+				0A02C32218F9593100471161 /* intel.png */,
+				0A02C32318F9593100471161 /* JobCell.h */,
+				0A02C32418F9593100471161 /* JobCell.m */,
+				0A02C32518F9593100471161 /* koala.png */,
+				0A02C32618F9593100471161 /* logo.png */,
+				0A02C32718F9593100471161 /* microsoft.png */,
+				0A02C32818F9593100471161 /* nasa.png */,
+				0A02C32918F9593100471161 /* nvidia.jpg */,
+				0A02C32A18F9593100471161 /* orange.PNG */,
+				0A02C32B18F9593100471161 /* purple.PNG */,
+				0A02C32C18F9593100471161 /* reddish.PNG */,
+				0A02C32D18F9593100471161 /* redi.PNG */,
+				0A02C31318F9588600471161 /* ConnectionCell.xib */,
+				0A02C31418F9588600471161 /* ConnectionViewController.h */,
+				0A02C31518F9588600471161 /* ConnectionViewController.m */,
 				DE3E2F1A18F91551001289EB /* AppDelegate.h */,
 				DE3E2F1B18F91551001289EB /* AppDelegate.m */,
 				DE3E2F1D18F91551001289EB /* Main.storyboard */,
@@ -153,11 +214,11 @@
 				DE3E2F4918F91E3D001289EB /* JobsViewController.h */,
 				DE3E2F4A18F91E3D001289EB /* JobsViewController.m */,
 				DE3E2F5D18F937FA001289EB /* Jobs */,
-				DE3E2F4C18F91E5C001289EB /* ConnectionsViewController.h */,
-				DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */,
 				DE3E2F5518F920BA001289EB /* Profile */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
 				DE3E2F1218F91551001289EB /* Supporting Files */,
+				0A02C31018F9571500471161 /* ConnectionCell.h */,
+				0A02C31118F9571500471161 /* ConnectionCell.m */,
 			);
 			path = TalentTrail;
 			sourceTree = "<group>";
@@ -302,9 +363,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A02C33718F9593100471161 /* logo.png in Resources */,
 				DE3E2F2718F91551001289EB /* Images.xcassets in Resources */,
+				0A02C33B18F9593100471161 /* orange.PNG in Resources */,
+				0A02C33E18F9593100471161 /* redi.PNG in Resources */,
+				0A02C33118F9593100471161 /* disney.png in Resources */,
+				0A02C33018F9593100471161 /* blue.PNG in Resources */,
+				0A02C33A18F9593100471161 /* nvidia.jpg in Resources */,
+				0A02C33818F9593100471161 /* microsoft.png in Resources */,
+				0A02C33C18F9593100471161 /* purple.PNG in Resources */,
+				0A02C32F18F9593100471161 /* background.png in Resources */,
+				0A02C33618F9593100471161 /* koala.png in Resources */,
+				0A02C33418F9593100471161 /* intel.png in Resources */,
 				DE3E2F1618F91551001289EB /* InfoPlist.strings in Resources */,
+				0A02C33318F9593100471161 /* green.PNG in Resources */,
 				DE3E2F1F18F91551001289EB /* Main.storyboard in Resources */,
+				0A02C33918F9593100471161 /* nasa.png in Resources */,
+				0A02C33218F9593100471161 /* facebook.gif in Resources */,
+				0A02C31618F9588600471161 /* ConnectionCell.xib in Resources */,
+				0A02C33D18F9593100471161 /* reddish.PNG in Resources */,
+				0A02C32E18F9593100471161 /* apple.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,11 +406,13 @@
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
+				0A02C31218F9571500471161 /* ConnectionCell.m in Sources */,
 				DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */,
+				0A02C33518F9593100471161 /* JobCell.m in Sources */,
 				DE3E2F5C18F9368A001289EB /* JobsTableViewController.m in Sources */,
+				0A02C31718F9588600471161 /* ConnectionViewController.m in Sources */,
 				DE3E2F6618F9387B001289EB /* JobCellData.m in Sources */,
 				DE3E2F6018F93827001289EB /* JobsDataController.m in Sources */,
-				DE3E2F4E18F91E5C001289EB /* ConnectionsViewController.m in Sources */,
 				DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */,
 				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
 				DE3E2F1818F91551001289EB /* main.m in Sources */,
@@ -544,6 +624,7 @@
 				DE3E2F3F18F91552001289EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE3E2F4018F91552001289EB /* Build configuration list for PBXNativeTarget "TalentTrailTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +633,7 @@
 				DE3E2F4218F91552001289EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
