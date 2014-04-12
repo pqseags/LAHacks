@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
+		DE3E2F0E18F91551001289EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0D18F91551001289EB /* CoreGraphics.framework */; };
+		DE3E2F1018F91551001289EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0F18F91551001289EB /* UIKit.framework */; };
+		DE3E2F1618F91551001289EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F1418F91551001289EB /* InfoPlist.strings */; };
+		DE3E2F1818F91551001289EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F1718F91551001289EB /* main.m */; };
+		DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F1B18F91551001289EB /* AppDelegate.m */; };
+		DE3E2F1F18F91551001289EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F1D18F91551001289EB /* Main.storyboard */; };
+		DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F2118F91551001289EB /* FirstViewController.m */; };
+		DE3E2F2718F91551001289EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F2618F91551001289EB /* Images.xcassets */; };
+		DE3E2F2E18F91552001289EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F2D18F91552001289EB /* XCTest.framework */; };
+		DE3E2F2F18F91552001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
+		DE3E2F3018F91552001289EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0F18F91551001289EB /* UIKit.framework */; };
+		DE3E2F3818F91552001289EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F3618F91552001289EB /* InfoPlist.strings */; };
+		DE3E2F3A18F91552001289EB /* TalentTrailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F3918F91552001289EB /* TalentTrailTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE3E2F3118F91552001289EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE3E2F0018F91551001289EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE3E2F0718F91551001289EB;
+			remoteInfo = TalentTrail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE3E2F0818F91551001289EB /* TalentTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3E2F0B18F91551001289EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DE3E2F0D18F91551001289EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE3E2F0F18F91551001289EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DE3E2F1318F91551001289EB /* TalentTrail-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalentTrail-Info.plist"; sourceTree = "<group>"; };
+		DE3E2F1518F91551001289EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE3E2F1718F91551001289EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE3E2F1918F91551001289EB /* TalentTrail-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TalentTrail-Prefix.pch"; sourceTree = "<group>"; };
+		DE3E2F1A18F91551001289EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE3E2F1B18F91551001289EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE3E2F1E18F91551001289EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE3E2F2018F91551001289EB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		DE3E2F2118F91551001289EB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DE3E2F2618F91551001289EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE3E2F2C18F91552001289EB /* TalentTrailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalentTrailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE3E2F2D18F91552001289EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DE3E2F3518F91552001289EB /* TalentTrailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalentTrailTests-Info.plist"; sourceTree = "<group>"; };
+		DE3E2F3718F91552001289EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE3E2F3918F91552001289EB /* TalentTrailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalentTrailTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE3E2F0518F91551001289EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E2F0E18F91551001289EB /* CoreGraphics.framework in Frameworks */,
+				DE3E2F1018F91551001289EB /* UIKit.framework in Frameworks */,
+				DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE3E2F2918F91552001289EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E2F2E18F91552001289EB /* XCTest.framework in Frameworks */,
+				DE3E2F3018F91552001289EB /* UIKit.framework in Frameworks */,
+				DE3E2F2F18F91552001289EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE3E2EFF18F91551001289EB = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F1118F91551001289EB /* TalentTrail */,
+				DE3E2F3318F91552001289EB /* TalentTrailTests */,
+				DE3E2F0A18F91551001289EB /* Frameworks */,
+				DE3E2F0918F91551001289EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE3E2F0918F91551001289EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F0818F91551001289EB /* TalentTrail.app */,
+				DE3E2F2C18F91552001289EB /* TalentTrailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE3E2F0A18F91551001289EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F0B18F91551001289EB /* Foundation.framework */,
+				DE3E2F0D18F91551001289EB /* CoreGraphics.framework */,
+				DE3E2F0F18F91551001289EB /* UIKit.framework */,
+				DE3E2F2D18F91552001289EB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE3E2F1118F91551001289EB /* TalentTrail */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F1A18F91551001289EB /* AppDelegate.h */,
+				DE3E2F1B18F91551001289EB /* AppDelegate.m */,
+				DE3E2F1D18F91551001289EB /* Main.storyboard */,
+				DE3E2F2018F91551001289EB /* FirstViewController.h */,
+				DE3E2F2118F91551001289EB /* FirstViewController.m */,
+				DE3E2F2618F91551001289EB /* Images.xcassets */,
+				DE3E2F1218F91551001289EB /* Supporting Files */,
+			);
+			path = TalentTrail;
+			sourceTree = "<group>";
+		};
+		DE3E2F1218F91551001289EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F1318F91551001289EB /* TalentTrail-Info.plist */,
+				DE3E2F1418F91551001289EB /* InfoPlist.strings */,
+				DE3E2F1718F91551001289EB /* main.m */,
+				DE3E2F1918F91551001289EB /* TalentTrail-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE3E2F3318F91552001289EB /* TalentTrailTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F3918F91552001289EB /* TalentTrailTests.m */,
+				DE3E2F3418F91552001289EB /* Supporting Files */,
+			);
+			path = TalentTrailTests;
+			sourceTree = "<group>";
+		};
+		DE3E2F3418F91552001289EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F3518F91552001289EB /* TalentTrailTests-Info.plist */,
+				DE3E2F3618F91552001289EB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE3E2F0718F91551001289EB /* TalentTrail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE3E2F3D18F91552001289EB /* Build configuration list for PBXNativeTarget "TalentTrail" */;
+			buildPhases = (
+				DE3E2F0418F91551001289EB /* Sources */,
+				DE3E2F0518F91551001289EB /* Frameworks */,
+				DE3E2F0618F91551001289EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalentTrail;
+			productName = TalentTrail;
+			productReference = DE3E2F0818F91551001289EB /* TalentTrail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE3E2F2B18F91552001289EB /* TalentTrailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE3E2F4018F91552001289EB /* Build configuration list for PBXNativeTarget "TalentTrailTests" */;
+			buildPhases = (
+				DE3E2F2818F91552001289EB /* Sources */,
+				DE3E2F2918F91552001289EB /* Frameworks */,
+				DE3E2F2A18F91552001289EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE3E2F3218F91552001289EB /* PBXTargetDependency */,
+			);
+			name = TalentTrailTests;
+			productName = TalentTrailTests;
+			productReference = DE3E2F2C18F91552001289EB /* TalentTrailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE3E2F0018F91551001289EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = TalentTrail;
+				TargetAttributes = {
+					DE3E2F2B18F91552001289EB = {
+						TestTargetID = DE3E2F0718F91551001289EB;
+					};
+				};
+			};
+			buildConfigurationList = DE3E2F0318F91551001289EB /* Build configuration list for PBXProject "TalentTrail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE3E2EFF18F91551001289EB;
+			productRefGroup = DE3E2F0918F91551001289EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE3E2F0718F91551001289EB /* TalentTrail */,
+				DE3E2F2B18F91552001289EB /* TalentTrailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE3E2F0618F91551001289EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E2F2718F91551001289EB /* Images.xcassets in Resources */,
+				DE3E2F1618F91551001289EB /* InfoPlist.strings in Resources */,
+				DE3E2F1F18F91551001289EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE3E2F2A18F91552001289EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E2F3818F91552001289EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE3E2F0418F91551001289EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */,
+				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
+				DE3E2F1818F91551001289EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE3E2F2818F91552001289EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE3E2F3A18F91552001289EB /* TalentTrailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE3E2F3218F91552001289EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE3E2F0718F91551001289EB /* TalentTrail */;
+			targetProxy = DE3E2F3118F91552001289EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE3E2F1418F91551001289EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE3E2F1518F91551001289EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DE3E2F1D18F91551001289EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE3E2F1E18F91551001289EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE3E2F3618F91552001289EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE3E2F3718F91552001289EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE3E2F3B18F91552001289EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE3E2F3C18F91552001289EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE3E2F3E18F91552001289EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalentTrail/TalentTrail-Prefix.pch";
+				INFOPLIST_FILE = "TalentTrail/TalentTrail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DE3E2F3F18F91552001289EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalentTrail/TalentTrail-Prefix.pch";
+				INFOPLIST_FILE = "TalentTrail/TalentTrail-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DE3E2F4118F91552001289EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TalentTrail.app/TalentTrail";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalentTrail/TalentTrail-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TalentTrailTests/TalentTrailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DE3E2F4218F91552001289EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TalentTrail.app/TalentTrail";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TalentTrail/TalentTrail-Prefix.pch";
+				INFOPLIST_FILE = "TalentTrailTests/TalentTrailTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE3E2F0318F91551001289EB /* Build configuration list for PBXProject "TalentTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE3E2F3B18F91552001289EB /* Debug */,
+				DE3E2F3C18F91552001289EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE3E2F3D18F91552001289EB /* Build configuration list for PBXNativeTarget "TalentTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE3E2F3E18F91552001289EB /* Debug */,
+				DE3E2F3F18F91552001289EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE3E2F4018F91552001289EB /* Build configuration list for PBXNativeTarget "TalentTrailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE3E2F4118F91552001289EB /* Debug */,
+				DE3E2F4218F91552001289EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE3E2F0018F91551001289EB /* Project object */;
+}
