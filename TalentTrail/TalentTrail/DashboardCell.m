@@ -27,6 +27,8 @@
         }
         
         self = [arrayOfViews objectAtIndex:0];
+        
+        //self.companyLabel
     }
     return self;
 }

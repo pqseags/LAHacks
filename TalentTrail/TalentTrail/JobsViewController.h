@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JobsViewController : UIViewController
+@interface JobsViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @end

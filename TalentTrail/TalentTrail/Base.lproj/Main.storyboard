@@ -360,6 +360,7 @@
         <!--Jobs View Controller-->
         <scene sceneID="ecR-0Y-xIG">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11D-GK-aXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4TV-rs-baH" customClass="JobsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4QB-VL-YcY"/>
@@ -368,6 +369,13 @@
                     <view key="view" contentMode="scaleToFill" id="aqt-5s-tR6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WyW-Ln-Kmp">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="utg-UI-9tA">
@@ -378,7 +386,6 @@
                         <outlet property="sidebarButton" destination="uGJ-ll-nFh" id="43N-V4-rwy"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="11D-GK-aXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1252" y="-1088"/>
         </scene>

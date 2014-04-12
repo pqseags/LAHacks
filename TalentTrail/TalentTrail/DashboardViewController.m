@@ -34,6 +34,7 @@
 	// Do any additional setup after loading the view.
     
     self.title = @"Dashboard";
+    self.collectionView.backgroundColor = [UIColor lightGrayColor];
     
     //--------------------SIDE BAR----------------------
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
@@ -53,27 +54,21 @@
     //___________________________________________________________
     //---------v------v-----COLLECTION VIEW--------v--------v----
     
-    //create data for collection view
-//    NSMutableArray *firstSection = [[NSMutableArray alloc] init];
-//    NSMutableArray *secondSection = [[NSMutableArray alloc] init];
-//    for (int i=0; i<10; i++) {
-//        [firstSection addObject:[NSString stringWithFormat:@"Cell %d", i]];
-//        [secondSection addObject:[NSString stringWithFormat:@"item %d", i]];
-//    }
-//    self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
+    //create data for collection view -- later need to get it from API
+
     dataArray = [[NSMutableArray alloc] init];
-    for (int i=0; i<10; i++)
+    for (int i=0; i<8; i++)
     {
-        [dataArray addObject:[NSString stringWithFormat:@"Cell %d", i]];
-        //NSLog(@"Adding object #%d", i);
+        [dataArray addObject:[NSString stringWithFormat:@"Apple"]];
     }
-    //NSLog(@"There are now %d items in the array.", [dataArray count]);
+
 
     
     
     //create cells from .xib
 //    UINib *cellNib = [UINib nibWithNibName:@"DashboardCell" bundle:nil];
 //    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"dashCell"];
+    
     //instead, create cells from DashboardCell class!
     [self.collectionView registerClass:[DashboardCell class] forCellWithReuseIdentifier:@"dashCell"];
     
