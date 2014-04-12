@@ -7,6 +7,7 @@
 //
 
 #import "DashboardViewController.h"
+#import "SWRevealViewController.h"
 
 @interface DashboardViewController ()
 
@@ -27,6 +28,22 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.title = @"Dashboard";
+    
+    //--------------------SIDE BAR----------------------
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    
+    _sidebarButton.tintColor = [UIColor whiteColor];
+   // _sidebarButton.backgroundColor =[UIColor whiteColor];
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //____________________SIDE BAR_______________________
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor orangeColor];
+    self.navigationController.navigationBar.titleTextAttributes= @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 }
 
 - (void)didReceiveMemoryWarning

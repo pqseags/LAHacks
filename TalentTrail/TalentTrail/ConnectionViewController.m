@@ -8,6 +8,7 @@
 
 #import "ConnectionViewController.h"
 #import "ConnectionCell.h"
+#import "SWRevealViewController.h"
 @interface ConnectionViewController ()
 
 @end
@@ -31,6 +32,14 @@ NSArray *Pictures;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //--------------------SIDE BAR----------------------
+    // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.target = self.revealViewController;
+    _sidebarButton.action = @selector(revealToggle:);
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //____________________SIDE BAR_______________________
     
     Names = [NSArray arrayWithObjects:@"Kevin Chen", @"Ryan Choi" , @"Parker Seagren", @"Trey Nelson", @"Sydney Liu", @"Justin Kwang", nil];
     Jobs = [NSArray arrayWithObjects: @"TalentTrail", @"TalentTrail", @"TalentTrail", @"TalentTrail", @"TalentTrail", @"TalentTrail", nil];

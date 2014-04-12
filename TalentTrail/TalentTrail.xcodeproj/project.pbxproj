@@ -17,7 +17,6 @@
 		0A02C33218F9593100471161 /* facebook.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32018F9593100471161 /* facebook.gif */; };
 		0A02C33318F9593100471161 /* green.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32118F9593100471161 /* green.PNG */; };
 		0A02C33418F9593100471161 /* intel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32218F9593100471161 /* intel.png */; };
-		0A02C33518F9593100471161 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02C32418F9593100471161 /* JobCell.m */; };
 		0A02C33618F9593100471161 /* koala.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32518F9593100471161 /* koala.png */; };
 		0A02C33718F9593100471161 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32618F9593100471161 /* logo.png */; };
 		0A02C33818F9593100471161 /* microsoft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32718F9593100471161 /* microsoft.png */; };
@@ -47,9 +46,8 @@
 		DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5018F91E6E001289EB /* ProfileViewController.m */; };
 		DE3E2F5418F920AF001289EB /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5318F920AF001289EB /* Profile.m */; };
 		DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5718F928CA001289EB /* RegisterViewController.m */; };
-		DE3E2F5C18F9368A001289EB /* JobsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5B18F9368A001289EB /* JobsTableViewController.m */; };
-		DE3E2F6018F93827001289EB /* JobsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5F18F93827001289EB /* JobsDataController.m */; };
-		DE3E2F6618F9387B001289EB /* JobCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F6518F9387B001289EB /* JobCellData.m */; };
+		DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7518F99671001289EB /* SWRevealViewController.m */; };
+		DE3E2F7918F9967E001289EB /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7818F9967E001289EB /* SideBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +73,6 @@
 		0A02C32018F9593100471161 /* facebook.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = facebook.gif; sourceTree = "<group>"; };
 		0A02C32118F9593100471161 /* green.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.PNG; sourceTree = "<group>"; };
 		0A02C32218F9593100471161 /* intel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intel.png; sourceTree = "<group>"; };
-		0A02C32318F9593100471161 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
-		0A02C32418F9593100471161 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
 		0A02C32518F9593100471161 /* koala.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = koala.png; sourceTree = "<group>"; };
 		0A02C32618F9593100471161 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		0A02C32718F9593100471161 /* microsoft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microsoft.png; sourceTree = "<group>"; };
@@ -117,12 +113,10 @@
 		DE3E2F5318F920AF001289EB /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		DE3E2F5618F928CA001289EB /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		DE3E2F5718F928CA001289EB /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		DE3E2F5A18F9368A001289EB /* JobsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTableViewController.h; sourceTree = "<group>"; };
-		DE3E2F5B18F9368A001289EB /* JobsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsTableViewController.m; sourceTree = "<group>"; };
-		DE3E2F5E18F93827001289EB /* JobsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsDataController.h; sourceTree = "<group>"; };
-		DE3E2F5F18F93827001289EB /* JobsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsDataController.m; sourceTree = "<group>"; };
-		DE3E2F6418F9387B001289EB /* JobCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCellData.h; sourceTree = "<group>"; };
-		DE3E2F6518F9387B001289EB /* JobCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCellData.m; sourceTree = "<group>"; };
+		DE3E2F7418F99671001289EB /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		DE3E2F7518F99671001289EB /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DE3E2F7718F9967E001289EB /* SideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarViewController.h; sourceTree = "<group>"; };
+		DE3E2F7818F9967E001289EB /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,43 +176,20 @@
 		DE3E2F1118F91551001289EB /* TalentTrail */ = {
 			isa = PBXGroup;
 			children = (
-				0A02C31C18F9593100471161 /* apple.png */,
-				0A02C31D18F9593100471161 /* background.png */,
-				0A02C31E18F9593100471161 /* blue.PNG */,
-				0A02C31F18F9593100471161 /* disney.png */,
-				0A02C32018F9593100471161 /* facebook.gif */,
-				0A02C32118F9593100471161 /* green.PNG */,
-				0A02C32218F9593100471161 /* intel.png */,
-				0A02C32318F9593100471161 /* JobCell.h */,
-				0A02C32418F9593100471161 /* JobCell.m */,
-				0A02C32518F9593100471161 /* koala.png */,
-				0A02C32618F9593100471161 /* logo.png */,
-				0A02C32718F9593100471161 /* microsoft.png */,
-				0A02C32818F9593100471161 /* nasa.png */,
-				0A02C32918F9593100471161 /* nvidia.jpg */,
-				0A02C32A18F9593100471161 /* orange.PNG */,
-				0A02C32B18F9593100471161 /* purple.PNG */,
-				0A02C32C18F9593100471161 /* reddish.PNG */,
-				0A02C32D18F9593100471161 /* redi.PNG */,
-				0A02C31318F9588600471161 /* ConnectionCell.xib */,
-				0A02C31418F9588600471161 /* ConnectionViewController.h */,
-				0A02C31518F9588600471161 /* ConnectionViewController.m */,
+				DE3E2F7118F9956F001289EB /* New Group */,
+				DE3E2F7218F99633001289EB /* Connections */,
 				DE3E2F1A18F91551001289EB /* AppDelegate.h */,
 				DE3E2F1B18F91551001289EB /* AppDelegate.m */,
 				DE3E2F1D18F91551001289EB /* Main.storyboard */,
 				DE3E2F2018F91551001289EB /* FirstViewController.h */,
 				DE3E2F2118F91551001289EB /* FirstViewController.m */,
+				DE3E2F7318F99654001289EB /* SideBar */,
 				DE3E2F5918F928D1001289EB /* Login */,
-				DE3E2F4618F91E30001289EB /* DashboardViewController.h */,
-				DE3E2F4718F91E30001289EB /* DashboardViewController.m */,
-				DE3E2F4918F91E3D001289EB /* JobsViewController.h */,
-				DE3E2F4A18F91E3D001289EB /* JobsViewController.m */,
-				DE3E2F5D18F937FA001289EB /* Jobs */,
+				DE3E2F7A18F9993E001289EB /* Dashboard */,
+				DE3E2F7B18F99B51001289EB /* Jobs */,
 				DE3E2F5518F920BA001289EB /* Profile */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
 				DE3E2F1218F91551001289EB /* Supporting Files */,
-				0A02C31018F9571500471161 /* ConnectionCell.h */,
-				0A02C31118F9571500471161 /* ConnectionCell.m */,
 			);
 			path = TalentTrail;
 			sourceTree = "<group>";
@@ -274,15 +245,66 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
-		DE3E2F5D18F937FA001289EB /* Jobs */ = {
+		DE3E2F7118F9956F001289EB /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				DE3E2F5A18F9368A001289EB /* JobsTableViewController.h */,
-				DE3E2F5B18F9368A001289EB /* JobsTableViewController.m */,
-				DE3E2F5E18F93827001289EB /* JobsDataController.h */,
-				DE3E2F5F18F93827001289EB /* JobsDataController.m */,
-				DE3E2F6418F9387B001289EB /* JobCellData.h */,
-				DE3E2F6518F9387B001289EB /* JobCellData.m */,
+				0A02C31C18F9593100471161 /* apple.png */,
+				0A02C31D18F9593100471161 /* background.png */,
+				0A02C31E18F9593100471161 /* blue.PNG */,
+				0A02C31F18F9593100471161 /* disney.png */,
+				0A02C32018F9593100471161 /* facebook.gif */,
+				0A02C32118F9593100471161 /* green.PNG */,
+				0A02C32218F9593100471161 /* intel.png */,
+				0A02C32518F9593100471161 /* koala.png */,
+				0A02C32618F9593100471161 /* logo.png */,
+				0A02C32718F9593100471161 /* microsoft.png */,
+				0A02C32818F9593100471161 /* nasa.png */,
+				0A02C32918F9593100471161 /* nvidia.jpg */,
+				0A02C32A18F9593100471161 /* orange.PNG */,
+				0A02C32B18F9593100471161 /* purple.PNG */,
+				0A02C32C18F9593100471161 /* reddish.PNG */,
+				0A02C32D18F9593100471161 /* redi.PNG */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		DE3E2F7218F99633001289EB /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				0A02C31018F9571500471161 /* ConnectionCell.h */,
+				0A02C31118F9571500471161 /* ConnectionCell.m */,
+				0A02C31318F9588600471161 /* ConnectionCell.xib */,
+				0A02C31418F9588600471161 /* ConnectionViewController.h */,
+				0A02C31518F9588600471161 /* ConnectionViewController.m */,
+			);
+			name = Connections;
+			sourceTree = "<group>";
+		};
+		DE3E2F7318F99654001289EB /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F7418F99671001289EB /* SWRevealViewController.h */,
+				DE3E2F7518F99671001289EB /* SWRevealViewController.m */,
+				DE3E2F7718F9967E001289EB /* SideBarViewController.h */,
+				DE3E2F7818F9967E001289EB /* SideBarViewController.m */,
+			);
+			name = SideBar;
+			sourceTree = "<group>";
+		};
+		DE3E2F7A18F9993E001289EB /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F4618F91E30001289EB /* DashboardViewController.h */,
+				DE3E2F4718F91E30001289EB /* DashboardViewController.m */,
+			);
+			name = Dashboard;
+			sourceTree = "<group>";
+		};
+		DE3E2F7B18F99B51001289EB /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F4918F91E3D001289EB /* JobsViewController.h */,
+				DE3E2F4A18F91E3D001289EB /* JobsViewController.m */,
 			);
 			name = Jobs;
 			sourceTree = "<group>";
@@ -403,16 +425,14 @@
 			files = (
 				DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */,
 				DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */,
+				DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				0A02C31218F9571500471161 /* ConnectionCell.m in Sources */,
 				DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */,
-				0A02C33518F9593100471161 /* JobCell.m in Sources */,
-				DE3E2F5C18F9368A001289EB /* JobsTableViewController.m in Sources */,
 				0A02C31718F9588600471161 /* ConnectionViewController.m in Sources */,
-				DE3E2F6618F9387B001289EB /* JobCellData.m in Sources */,
-				DE3E2F6018F93827001289EB /* JobsDataController.m in Sources */,
+				DE3E2F7918F9967E001289EB /* SideBarViewController.m in Sources */,
 				DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */,
 				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
 				DE3E2F1818F91551001289EB /* main.m in Sources */,
