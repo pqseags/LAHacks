@@ -20,14 +20,14 @@ NSArray *Positions;
 NSArray *Pictures;
 
 
-- (id)initWithStyle:(UITableViewStyle)style
+/*- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {
@@ -44,7 +44,7 @@ NSArray *Pictures;
     Names = [NSArray arrayWithObjects:@"Kevin Chen", @"Ryan Choi" , @"Parker Seagren", @"Trey Nelson", @"Sydney Liu", @"Justin Kwang", nil];
     Jobs = [NSArray arrayWithObjects: @"TalentTrail", @"TalentTrail", @"TalentTrail", @"TalentTrail", @"TalentTrail", @"TalentTrail", nil];
     Positions = [NSArray arrayWithObjects: @"Android Developer", @"Database Manager", @"iOS Developer", @"BackEnd Web Developer", @"CEO", @"Designer", nil];
-    Pictures = [NSArray arrayWithObjects: @"orange.png", @"reddish.png", @"purple.png", @"green.png", @"blue.png", nil];
+    Pictures = [NSArray arrayWithObjects: @"orange.png", @"reddish.png", @"purple.png", @"green.png", @"blue.png", @"orange.png", nil];
 
                                         
     // Uncomment the following line to preserve selection between presentations.
@@ -79,12 +79,12 @@ NSArray *Pictures;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ConnectionCell";
- //   ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+   // ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 //    if(cell==nil)
 //    {
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ConnectionCell" owner:self options:nil];
-  ConnectionCell*      cell = [nib objectAtIndex:0];
- //   }
+        ConnectionCell *cell = [nib objectAtIndex:0];
+//    }
 
     // Configure the cell...
     cell.Name.text = [Names objectAtIndex:indexPath.row];
@@ -94,7 +94,10 @@ NSArray *Pictures;
 
     return cell;
 }
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 119;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
