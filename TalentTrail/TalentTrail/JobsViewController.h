@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JobsViewController : UIViewController 
+@interface JobsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
