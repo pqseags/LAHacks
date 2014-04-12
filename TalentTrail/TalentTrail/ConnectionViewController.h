@@ -11,4 +11,5 @@
 @interface ConnectionViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
+
 @end

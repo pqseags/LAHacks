@@ -421,6 +421,9 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="AhU-R1-3sz"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sidebarButton" destination="AhU-R1-3sz" id="kae-Fl-BCT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vna-4W-sc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
