@@ -9,6 +9,7 @@
 #import "DashboardViewController.h"
 #import "SWRevealViewController.h"
 #import "HexColor.h"
+#import "DashboardCell.h"
 
 @interface DashboardViewController ()
 
@@ -45,9 +46,83 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     //____________________SIDE BAR_______________________
     
+    //configure navigation controller bar
     self.navigationController.navigationBar.barTintColor = [HexColor colorWithHexString:@"F48F16"];
     self.navigationController.navigationBar.titleTextAttributes= @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    
+    //___________________________________________________________
+    //---------v------v-----COLLECTION VIEW--------v--------v----
+    
+    //create data for collection view
+//    NSMutableArray *firstSection = [[NSMutableArray alloc] init];
+//    NSMutableArray *secondSection = [[NSMutableArray alloc] init];
+//    for (int i=0; i<10; i++) {
+//        [firstSection addObject:[NSString stringWithFormat:@"Cell %d", i]];
+//        [secondSection addObject:[NSString stringWithFormat:@"item %d", i]];
+//    }
+//    self.dataArray = [[NSArray alloc] initWithObjects:firstSection, secondSection, nil];
+    dataArray = [[NSMutableArray alloc] init];
+    for (int i=0; i<10; i++)
+    {
+        [dataArray addObject:[NSString stringWithFormat:@"Cell %d", i]];
+        //NSLog(@"Adding object #%d", i);
+    }
+    //NSLog(@"There are now %d items in the array.", [dataArray count]);
+
+    
+    
+    //create cells from .xib
+//    UINib *cellNib = [UINib nibWithNibName:@"DashboardCell" bundle:nil];
+//    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"dashCell"];
+    //instead, create cells from DashboardCell class!
+    [self.collectionView registerClass:[DashboardCell class] forCellWithReuseIdentifier:@"dashCell"];
+    
+    //create flowlayout
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(100, 125)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];  //probably want to set to vertical
+    
+    [self.collectionView setCollectionViewLayout:flowLayout];
+    
+  
 }
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    //return [self.dataArray count];
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+//    NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
+//    return [sectionArray count];
+    NSLog(@"Number of items in dataArray: %d", [dataArray count]);
+    return [dataArray count];
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+   // NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
+    
+    NSString *cellData = [dataArray objectAtIndex:indexPath.row];
+    
+    static NSString *cellIdentifier = @"dashCell";
+    
+    DashboardCell *cell = (DashboardCell*)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
+    //UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
+    //[titleLabel setText:cellData];
+    
+    [cell.companyLabel setText:cellData];
+    //[cell.companyImage setImage:
+    
+    return cell;
+    
+}
+
+  //_____^__________^_____COLLECTION VIEW______^____________^_____
+  //______________________________________________________________
 
 - (void)didReceiveMemoryWarning
 {

@@ -50,6 +50,7 @@
 		DE3E2F7918F9967E001289EB /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7818F9967E001289EB /* SideBarViewController.m */; };
 		DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7D18F9B0C4001289EB /* HexColor.m */; };
 		DE3E2F8018F9C0A1001289EB /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */; };
+		DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8318F9D95C001289EB /* DashboardCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		DE3E2F7C18F9B0C4001289EB /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
 		DE3E2F7D18F9B0C4001289EB /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
 		DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
+		DE3E2F8218F9D95C001289EB /* DashboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardCell.h; sourceTree = "<group>"; };
+		DE3E2F8318F9D95C001289EB /* DashboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +307,8 @@
 				DE3E2F4618F91E30001289EB /* DashboardViewController.h */,
 				DE3E2F4718F91E30001289EB /* DashboardViewController.m */,
 				DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */,
+				DE3E2F8218F9D95C001289EB /* DashboardCell.h */,
+				DE3E2F8318F9D95C001289EB /* DashboardCell.m */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 				DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */,
 				DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
+				DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				0A02C31218F9571500471161 /* ConnectionCell.m in Sources */,
