@@ -336,6 +336,10 @@
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="t7y-ca-Pgc" id="P6H-lA-P6m"/>
+                                    <outlet property="delegate" destination="t7y-ca-Pgc" id="59k-Tk-fMY"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -345,6 +349,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu" id="0t2-5U-mLt"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="oKd-6z-Aat" id="16B-KO-QKO"/>
                         <outlet property="sidebarButton" destination="0t2-5U-mLt" id="Cfa-sv-Oyx"/>
                     </connections>
                 </viewController>

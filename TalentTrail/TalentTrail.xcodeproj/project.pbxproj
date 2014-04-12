@@ -49,6 +49,7 @@
 		DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7518F99671001289EB /* SWRevealViewController.m */; };
 		DE3E2F7918F9967E001289EB /* SideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7818F9967E001289EB /* SideBarViewController.m */; };
 		DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7D18F9B0C4001289EB /* HexColor.m */; };
+		DE3E2F8018F9C0A1001289EB /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		DE3E2F7818F9967E001289EB /* SideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarViewController.m; sourceTree = "<group>"; };
 		DE3E2F7C18F9B0C4001289EB /* HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HexColor.h; sourceTree = "<group>"; };
 		DE3E2F7D18F9B0C4001289EB /* HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HexColor.m; sourceTree = "<group>"; };
+		DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 			children = (
 				DE3E2F4618F91E30001289EB /* DashboardViewController.h */,
 				DE3E2F4718F91E30001289EB /* DashboardViewController.m */,
+				DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				DE3E2F2718F91551001289EB /* Images.xcassets in Resources */,
 				0A02C33B18F9593100471161 /* orange.PNG in Resources */,
 				0A02C33E18F9593100471161 /* redi.PNG in Resources */,
+				DE3E2F8018F9C0A1001289EB /* DashboardCell.xib in Resources */,
 				0A02C33118F9593100471161 /* disney.png in Resources */,
 				0A02C33018F9593100471161 /* blue.PNG in Resources */,
 				0A02C33A18F9593100471161 /* nvidia.jpg in Resources */,
