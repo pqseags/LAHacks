@@ -26,6 +26,11 @@
 		DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4A18F91E3D001289EB /* JobsViewController.m */; };
 		DE3E2F4E18F91E5C001289EB /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */; };
 		DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5018F91E6E001289EB /* ProfileViewController.m */; };
+		DE3E2F5418F920AF001289EB /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5318F920AF001289EB /* Profile.m */; };
+		DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5718F928CA001289EB /* RegisterViewController.m */; };
+		DE3E2F5C18F9368A001289EB /* JobsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5B18F9368A001289EB /* JobsTableViewController.m */; };
+		DE3E2F6018F93827001289EB /* JobsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5F18F93827001289EB /* JobsDataController.m */; };
+		DE3E2F6618F9387B001289EB /* JobCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F6518F9387B001289EB /* JobCellData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,16 @@
 		DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
 		DE3E2F4F18F91E6E001289EB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		DE3E2F5018F91E6E001289EB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		DE3E2F5218F920AF001289EB /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		DE3E2F5318F920AF001289EB /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		DE3E2F5618F928CA001289EB /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		DE3E2F5718F928CA001289EB /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		DE3E2F5A18F9368A001289EB /* JobsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsTableViewController.h; sourceTree = "<group>"; };
+		DE3E2F5B18F9368A001289EB /* JobsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsTableViewController.m; sourceTree = "<group>"; };
+		DE3E2F5E18F93827001289EB /* JobsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsDataController.h; sourceTree = "<group>"; };
+		DE3E2F5F18F93827001289EB /* JobsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsDataController.m; sourceTree = "<group>"; };
+		DE3E2F6418F9387B001289EB /* JobCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCellData.h; sourceTree = "<group>"; };
+		DE3E2F6518F9387B001289EB /* JobCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCellData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,16 +147,15 @@
 				DE3E2F1D18F91551001289EB /* Main.storyboard */,
 				DE3E2F2018F91551001289EB /* FirstViewController.h */,
 				DE3E2F2118F91551001289EB /* FirstViewController.m */,
-				DE3E2F4318F91A55001289EB /* LogInViewController.h */,
-				DE3E2F4418F91A55001289EB /* LogInViewController.m */,
+				DE3E2F5918F928D1001289EB /* Login */,
 				DE3E2F4618F91E30001289EB /* DashboardViewController.h */,
 				DE3E2F4718F91E30001289EB /* DashboardViewController.m */,
 				DE3E2F4918F91E3D001289EB /* JobsViewController.h */,
 				DE3E2F4A18F91E3D001289EB /* JobsViewController.m */,
+				DE3E2F5D18F937FA001289EB /* Jobs */,
 				DE3E2F4C18F91E5C001289EB /* ConnectionsViewController.h */,
 				DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */,
-				DE3E2F4F18F91E6E001289EB /* ProfileViewController.h */,
-				DE3E2F5018F91E6E001289EB /* ProfileViewController.m */,
+				DE3E2F5518F920BA001289EB /* Profile */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
 				DE3E2F1218F91551001289EB /* Supporting Files */,
 			);
@@ -175,6 +189,41 @@
 				DE3E2F3618F91552001289EB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE3E2F5518F920BA001289EB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F4F18F91E6E001289EB /* ProfileViewController.h */,
+				DE3E2F5018F91E6E001289EB /* ProfileViewController.m */,
+				DE3E2F5218F920AF001289EB /* Profile.h */,
+				DE3E2F5318F920AF001289EB /* Profile.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		DE3E2F5918F928D1001289EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F4318F91A55001289EB /* LogInViewController.h */,
+				DE3E2F4418F91A55001289EB /* LogInViewController.m */,
+				DE3E2F5618F928CA001289EB /* RegisterViewController.h */,
+				DE3E2F5718F928CA001289EB /* RegisterViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		DE3E2F5D18F937FA001289EB /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				DE3E2F5A18F9368A001289EB /* JobsTableViewController.h */,
+				DE3E2F5B18F9368A001289EB /* JobsTableViewController.m */,
+				DE3E2F5E18F93827001289EB /* JobsDataController.h */,
+				DE3E2F5F18F93827001289EB /* JobsDataController.m */,
+				DE3E2F6418F9387B001289EB /* JobCellData.h */,
+				DE3E2F6518F9387B001289EB /* JobCellData.m */,
+			);
+			name = Jobs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +326,12 @@
 				DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */,
 				DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
+				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
+				DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */,
+				DE3E2F5C18F9368A001289EB /* JobsTableViewController.m in Sources */,
+				DE3E2F6618F9387B001289EB /* JobCellData.m in Sources */,
+				DE3E2F6018F93827001289EB /* JobsDataController.m in Sources */,
 				DE3E2F4E18F91E5C001289EB /* ConnectionsViewController.m in Sources */,
 				DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */,
 				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
