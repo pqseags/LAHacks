@@ -10,6 +10,9 @@
 
 @interface DashboardViewController : UIViewController <UICollectionViewDelegate , UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *searchButton;
+
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
