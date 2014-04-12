@@ -8,13 +8,16 @@
 
 #import "JobsViewController.h"
 #import "SWRevealViewController.h"
+#import "JobCell.h"
 
 @interface JobsViewController ()
 
 @end
 
 @implementation JobsViewController
-
+NSArray *Jobs;
+NSArray *Positions;
+NSArray *Pictures;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -36,6 +39,9 @@
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     //____________________SIDE BAR_______________________
+    Jobs = [NSArray arrayWithObjects: @"Google", @"Apple", @"Intel", @"Facebook", @"Disney", @"Nvidia", @"Microsoft", @"NASA", nil];
+    Positions = [NSArray arrayWithObjects: @"Android Developer", @"Database Manager", @"iOS Developer", @"BackEnd Web Developer", @"Electrical Engineer", @"Designer", @"Hardware Engineer", @"Aerospace Engineer", nil];
+    Pictures = [NSArray arrayWithObjects: @"google.png", @"apple.png", @"intel.png", @"facebook.gif", @"disney.png", @"nvidia.jpg", @"microsoft.png", @"nasa.png", nil];
     
 }
 
@@ -44,5 +50,44 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return Jobs.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"JobCell";
+    // ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //    if(cell==nil)
+    //    {
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"JobCell" owner:self options:nil];
+    JobCell *cell = [nib objectAtIndex:0];
+    //    }
+    
+    // Configure the cell...
+    cell.Position.text = [Positions objectAtIndex:indexPath.row];
+    cell.Job.text = [Jobs objectAtIndex:indexPath.row];
+    cell.Picture.image = [UIImage imageNamed:[Pictures objectAtIndex:indexPath.row]];
+    
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 119;
+}
+
 
 @end
