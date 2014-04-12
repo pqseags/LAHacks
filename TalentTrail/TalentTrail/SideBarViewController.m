@@ -8,13 +8,16 @@
 
 #import "SideBarViewController.h"
 #import "SWRevealViewController.h"
+#import "HexColor.h"
 
 @interface SideBarViewController ()
 @property (nonatomic, strong) NSArray *menuItems;
+@property (nonatomic, strong) NSArray *settingsMenuItems;
 @end
 
 @implementation SideBarViewController
 @synthesize menuItems;
+@synthesize settingsMenuItems;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,8 +42,12 @@
     //self.tableView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
     //self.tableView.separatorColor = [UIColor colorWithWhite:0.15f alpha:0.2f];
     
-    menuItems = @[@"dashboard", @"jobs", @"connections", @"profile", @"logout"];
-
+    menuItems = @[@"dashboard", @"jobs", @"connections", @"profile"];
+    settingsMenuItems = @[@"settings", @"help", @"feedback", @"logout"];
+    
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
+    self.tableView.separatorColor = [UIColor lightGrayColor];
+//[HexColor colorWithHexString:@"F48F16"]
     
     
 }
@@ -56,26 +63,39 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.menuItems count];
+    if (section ==0)
+        return [self.menuItems count];
+    else return [self.settingsMenuItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = [self.menuItems objectAtIndex:indexPath.row];
+    NSString *CellIdentifier = [[NSString alloc] init];
+    if (indexPath.section ==0){
+        CellIdentifier = [self.menuItems objectAtIndex:indexPath.row];
+    }
+    else CellIdentifier = [self.settingsMenuItems objectAtIndex:indexPath.row];
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    //cell.backgroundColor =[UIColor colorWithWhite:0.2f alpha:1.0f];
+    cell.backgroundColor =[UIColor lightGrayColor];
+    //cell.textLabel.text = @"Doot";     //need to uncomment this line in order to set the text color...
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
     
-    // Configure the cell...
-    
-    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if(section == 0)
+        return @"";
+    else return @"Help and Settings";
 }
 
 - (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
