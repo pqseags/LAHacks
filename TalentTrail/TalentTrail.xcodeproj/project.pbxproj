@@ -21,6 +21,7 @@
 		DE3E2F3018F91552001289EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0F18F91551001289EB /* UIKit.framework */; };
 		DE3E2F3818F91552001289EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F3618F91552001289EB /* InfoPlist.strings */; };
 		DE3E2F3A18F91552001289EB /* TalentTrailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F3918F91552001289EB /* TalentTrailTests.m */; };
+		DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4418F91A55001289EB /* LogInViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		DE3E2F3518F91552001289EB /* TalentTrailTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TalentTrailTests-Info.plist"; sourceTree = "<group>"; };
 		DE3E2F3718F91552001289EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE3E2F3918F91552001289EB /* TalentTrailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalentTrailTests.m; sourceTree = "<group>"; };
+		DE3E2F4318F91A55001289EB /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
+		DE3E2F4418F91A55001289EB /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				DE3E2F1D18F91551001289EB /* Main.storyboard */,
 				DE3E2F2018F91551001289EB /* FirstViewController.h */,
 				DE3E2F2118F91551001289EB /* FirstViewController.m */,
+				DE3E2F4318F91A55001289EB /* LogInViewController.h */,
+				DE3E2F4418F91A55001289EB /* LogInViewController.m */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
 				DE3E2F1218F91551001289EB /* Supporting Files */,
 			);
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */,
 				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
 				DE3E2F1818F91551001289EB /* main.m in Sources */,
