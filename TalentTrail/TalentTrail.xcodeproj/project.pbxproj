@@ -185,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				DE3E2F7118F9956F001289EB /* New Group */,
-				DE3E2F7218F99633001289EB /* Connections */,
 				DE3E2F1A18F91551001289EB /* AppDelegate.h */,
 				DE3E2F1B18F91551001289EB /* AppDelegate.m */,
 				DE3E2F1D18F91551001289EB /* Main.storyboard */,
@@ -194,6 +193,7 @@
 				DE3E2F7318F99654001289EB /* SideBar */,
 				DE3E2F5918F928D1001289EB /* Login */,
 				DE3E2F7A18F9993E001289EB /* Dashboard */,
+				DE3E2F7218F99633001289EB /* Connections */,
 				DE3E2F7B18F99B51001289EB /* Jobs */,
 				DE3E2F5518F920BA001289EB /* Profile */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
