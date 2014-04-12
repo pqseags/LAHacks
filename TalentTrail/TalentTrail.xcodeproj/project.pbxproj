@@ -22,6 +22,10 @@
 		DE3E2F3818F91552001289EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F3618F91552001289EB /* InfoPlist.strings */; };
 		DE3E2F3A18F91552001289EB /* TalentTrailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F3918F91552001289EB /* TalentTrailTests.m */; };
 		DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4418F91A55001289EB /* LogInViewController.m */; };
+		DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4718F91E30001289EB /* DashboardViewController.m */; };
+		DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4A18F91E3D001289EB /* JobsViewController.m */; };
+		DE3E2F4E18F91E5C001289EB /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */; };
+		DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F5018F91E6E001289EB /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,14 @@
 		DE3E2F3918F91552001289EB /* TalentTrailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TalentTrailTests.m; sourceTree = "<group>"; };
 		DE3E2F4318F91A55001289EB /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		DE3E2F4418F91A55001289EB /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
+		DE3E2F4618F91E30001289EB /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		DE3E2F4718F91E30001289EB /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		DE3E2F4918F91E3D001289EB /* JobsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobsViewController.h; sourceTree = "<group>"; };
+		DE3E2F4A18F91E3D001289EB /* JobsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobsViewController.m; sourceTree = "<group>"; };
+		DE3E2F4C18F91E5C001289EB /* ConnectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionsViewController.h; sourceTree = "<group>"; };
+		DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
+		DE3E2F4F18F91E6E001289EB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		DE3E2F5018F91E6E001289EB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,14 @@
 				DE3E2F2118F91551001289EB /* FirstViewController.m */,
 				DE3E2F4318F91A55001289EB /* LogInViewController.h */,
 				DE3E2F4418F91A55001289EB /* LogInViewController.m */,
+				DE3E2F4618F91E30001289EB /* DashboardViewController.h */,
+				DE3E2F4718F91E30001289EB /* DashboardViewController.m */,
+				DE3E2F4918F91E3D001289EB /* JobsViewController.h */,
+				DE3E2F4A18F91E3D001289EB /* JobsViewController.m */,
+				DE3E2F4C18F91E5C001289EB /* ConnectionsViewController.h */,
+				DE3E2F4D18F91E5C001289EB /* ConnectionsViewController.m */,
+				DE3E2F4F18F91E6E001289EB /* ProfileViewController.h */,
+				DE3E2F5018F91E6E001289EB /* ProfileViewController.m */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
 				DE3E2F1218F91551001289EB /* Supporting Files */,
 			);
@@ -254,7 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */,
+				DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */,
+				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
+				DE3E2F4E18F91E5C001289EB /* ConnectionsViewController.m in Sources */,
 				DE3E2F1C18F91551001289EB /* AppDelegate.m in Sources */,
 				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
 				DE3E2F1818F91551001289EB /* main.m in Sources */,
