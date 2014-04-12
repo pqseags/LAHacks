@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIImageView *talentTrailPicture;
 
 @property NSString * email;
 @property NSString * password;

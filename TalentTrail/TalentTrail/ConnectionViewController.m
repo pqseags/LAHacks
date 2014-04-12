@@ -78,13 +78,13 @@ NSArray *Pictures;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if(cell==nil)
-    {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"Cell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
+    static NSString *CellIdentifier = @"ConnectionCell";
+ //   ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+//    if(cell==nil)
+//    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ConnectionCell" owner:self options:nil];
+  ConnectionCell*      cell = [nib objectAtIndex:0];
+ //   }
 
     // Configure the cell...
     cell.Name.text = [Names objectAtIndex:indexPath.row];
