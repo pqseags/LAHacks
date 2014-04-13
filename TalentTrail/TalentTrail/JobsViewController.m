@@ -32,6 +32,9 @@ NSArray *Pictures;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
+    self.tableView.separatorColor = [UIColor lightGrayColor];
     //--------------------SIDE BAR----------------------
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
     _sidebarButton.tintColor = [UIColor whiteColor];
@@ -83,6 +86,10 @@ NSArray *Pictures;
     cell.Position.text = [Positions objectAtIndex:indexPath.row];
     cell.Job.text = [Jobs objectAtIndex:indexPath.row];
     cell.Picture.image = [UIImage imageNamed:[Pictures objectAtIndex:indexPath.row]];
+    
+    [cell.contentView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [cell.contentView.layer setBorderWidth:2.0f];
+    
     
     return cell;
 }
