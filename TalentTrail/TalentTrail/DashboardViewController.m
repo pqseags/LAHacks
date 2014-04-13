@@ -39,7 +39,7 @@ NSArray *companyLabels;
     
     //--------------------SIDE BAR----------------------
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
-    
+    self.navigationController.navigationBar.translucent = NO;
     _sidebarButton.tintColor = [UIColor whiteColor];
     _searchButton.tintColor = [UIColor whiteColor];
    // _sidebarButton.backgroundColor =[UIColor whiteColor];
