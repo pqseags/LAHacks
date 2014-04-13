@@ -499,7 +499,11 @@
                     <tabBarItem key="tabBarItem" title="Profile" id="TCX-P6-fth"/>
                     <navigationItem key="navigationItem" id="aod-L7-nGx">
                         <barButtonItem key="leftBarButtonItem" image="menu-25" id="Sj2-83-5Wp"/>
-                        <barButtonItem key="rightBarButtonItem" image="search-25" id="gTy-Jj-AOx"/>
+                        <barButtonItem key="rightBarButtonItem" image="ball_point_pen-25" id="gTy-Jj-AOx">
+                            <connections>
+                                <segue destination="qDY-Vg-cXM" kind="push" id="53F-fs-0me"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -510,6 +514,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lB-N2-jIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="334"/>
+        </scene>
+        <!--Edit Profile View Controller-->
+        <scene sceneID="x8h-63-HgZ">
+            <objects>
+                <viewController id="qDY-Vg-cXM" customClass="EditProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GFM-Bi-KfF"/>
+                        <viewControllerLayoutGuide type="bottom" id="RUv-Pg-FCn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FfM-Hq-NSl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Khm-74-ayC">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="kph-HD-pmX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="kqx-gj-fnU">
+                            <connections>
+                                <action selector="pressedDone:" destination="qDY-Vg-cXM" id="HzQ-uA-euf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGm-b3-bm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="422"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="UdJ-qL-Rzr">
@@ -596,9 +626,27 @@
             </objects>
             <point key="canvasLocation" x="-514" y="471"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7l8-0A-k9S">
+            <objects>
+                <viewController id="oaM-7L-4e9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZXd-Fy-Ml2"/>
+                        <viewControllerLayoutGuide type="bottom" id="vgs-83-HZx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jJy-a9-vUc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4de-Ry-elC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="197" height="181"/>
+        <image name="ball_point_pen-25" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
         <image name="menu-25" width="25" height="25"/>
         <image name="search-25" width="25" height="25"/>
@@ -610,7 +658,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="6h7-pD-XNg"/>
         <segue reference="6Mu-5Y-fKH"/>
+        <segue reference="6h7-pD-XNg"/>
     </inferredMetricsTieBreakers>
 </document>

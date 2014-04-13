@@ -54,6 +54,7 @@
 		DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F7D18F9B0C4001289EB /* HexColor.m */; };
 		DE3E2F8018F9C0A1001289EB /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */; };
 		DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8318F9D95C001289EB /* DashboardCell.m */; };
+		DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
 		DE3E2F8218F9D95C001289EB /* DashboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardCell.h; sourceTree = "<group>"; };
 		DE3E2F8318F9D95C001289EB /* DashboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardCell.m; sourceTree = "<group>"; };
+		DE3E2F8518FA1C1B001289EB /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +250,8 @@
 				DE3E2F5018F91E6E001289EB /* ProfileViewController.m */,
 				DE3E2F5218F920AF001289EB /* Profile.h */,
 				DE3E2F5318F920AF001289EB /* Profile.m */,
+				DE3E2F8518FA1C1B001289EB /* EditProfileViewController.h */,
+				DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 				DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
+				DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */,
 				0A02C31218F9571500471161 /* ConnectionCell.m in Sources */,
 				DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */,
 				DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */,
