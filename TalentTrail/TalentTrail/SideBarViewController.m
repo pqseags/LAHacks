@@ -85,7 +85,10 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     cell.backgroundColor =[UIColor lightGrayColor];
-    //cell.textLabel.text = @"Doot";     //need to uncomment this line in order to set the text color...
+    cell.textLabel.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
+    
+    //need to uncomment this line in order to set the text color...
+    
     cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
     

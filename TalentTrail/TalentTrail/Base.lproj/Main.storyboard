@@ -368,11 +368,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8FL-Cu-znl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aqt-5s-tR6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WyW-Ln-Kmp">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -384,6 +384,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="utg-UI-9tA">
                         <barButtonItem key="leftBarButtonItem" image="menu-25" id="uGJ-ll-nFh"/>
                         <barButtonItem key="rightBarButtonItem" image="search-25" id="zMF-bP-TQ7"/>
@@ -697,6 +698,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1zp-52-bhi">
+                                <rect key="frame" x="50" y="488" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit Skills">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qyi-sw-SG7" kind="push" id="tMH-NO-RKT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-5q-up9">
+                                <rect key="frame" x="208" y="488" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit Jobs">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kfM-va-dQq" kind="push" id="jb9-W6-Ftn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -754,6 +775,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ew1-Ra-3va"/>
                     <connections>
                         <outlet property="tableView" destination="e0C-mc-iW2" id="YD6-gt-P4A"/>
                     </connections>
@@ -888,6 +910,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ILI-iq-lQb"/>
                     <connections>
                         <outlet property="tableView" destination="rtS-MT-mhM" id="8gM-qB-169"/>
                     </connections>
@@ -899,11 +922,31 @@
     </scenes>
     <resources>
         <image name="background" width="197" height="181"/>
+        <image name="background" width="197" height="181"/>
         <image name="ball_point_pen-25" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="menu-25" width="25" height="25"/>
+        <image name="menu-25" width="25" height="25"/>
+        <image name="menu-25" width="25" height="25"/>
         <image name="menu-25" width="25" height="25"/>
         <image name="search-25" width="25" height="25"/>
+        <image name="search-25" width="25" height="25"/>
+        <image name="search-25" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="underline" width="268" height="5"/>
+        <image name="underline" width="268" height="5"/>
+        <image name="underline" width="268" height="5"/>
+        <image name="underline" width="268" height="5"/>
+        <image name="underline" width="268" height="5"/>
+        <image name="underline" width="268" height="5"/>
+        <image name="underline" width="268" height="5"/>
         <image name="underline" width="268" height="5"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
