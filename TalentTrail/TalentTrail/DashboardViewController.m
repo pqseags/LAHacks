@@ -16,8 +16,9 @@
 @end
 
 @implementation DashboardViewController
+NSArray *companyImages;
+NSArray *companyLabels;
 
-@synthesize dataArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,12 +58,8 @@
     
     //create data for collection view -- later need to get it from API
 
-    dataArray = [[NSMutableArray alloc] init];
-    for (int i=0; i<8; i++)
-    {
-        [dataArray addObject:[NSString stringWithFormat:@"Apple"]];
-    }
-
+    companyImages = [NSArray arrayWithObjects: @"google.png", @"apple.png", @"intel.png", @"facebook.gif", @"disney.png", @"nvidia.jpg", @"microsoft.png", @"nasa.png", nil];
+    companyLabels = [NSArray arrayWithObjects: @"Google", @"Apple", @"Intel", @"Facebook", @"Disney", @"Nvidia", @"Microsoft", @"NASA", nil];
 
     
     
@@ -93,15 +90,16 @@
 {
 //    NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
 //    return [sectionArray count];
-    NSLog(@"Number of items in dataArray: %d", [dataArray count]);
-    return [dataArray count];
+    NSLog(@"Number of items in dataArray: %d", [companyLabels count]);
+    return [companyLabels count];
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
    // NSMutableArray *data = [self.dataArray objectAtIndex:indexPath.section];
     
-    NSString *cellData = [dataArray objectAtIndex:indexPath.row];
+    //NSString *cellData = [dataArray objectAtIndex:indexPath.row];
+    
     
     static NSString *cellIdentifier = @"dashCell";
     
@@ -109,8 +107,9 @@
     
     //UILabel *titleLabel = (UILabel *)[cell viewWithTag:100];
     //[titleLabel setText:cellData];
-    
-    [cell.companyLabel setText:cellData];
+    cell.companyLabel.text = [companyLabels objectAtIndex:indexPath.row];
+    cell.companyImage.image = [UIImage imageNamed:[companyImages objectAtIndex:indexPath.row]];
+    //[cell.companyLabel setText:cellData];
     //[cell.companyImage setImage:
     
     return cell;

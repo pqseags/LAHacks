@@ -9,6 +9,8 @@
 #import "DashboardCell.h"
 
 @implementation DashboardCell
+@synthesize companyImage = _companyImage;
+@synthesize companyLabel = _companyLabel;
 
 - (id)initWithFrame:(CGRect)frame
 {

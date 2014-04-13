@@ -15,6 +15,5 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
-@property (nonatomic, strong) NSMutableArray *dataArray;
 
 @end
