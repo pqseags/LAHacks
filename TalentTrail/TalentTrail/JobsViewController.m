@@ -34,6 +34,8 @@ NSArray *Pictures;
     
     //--------------------SIDE BAR----------------------
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
+    _sidebarButton.tintColor = [UIColor whiteColor];
+    _searchButton.tintColor = [UIColor whiteColor];
     _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
     // Set the gesture
