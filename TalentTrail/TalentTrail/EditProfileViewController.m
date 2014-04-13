@@ -59,7 +59,7 @@
     lastNameField.returnKeyType = UIReturnKeyDone;
     firstNameField.returnKeyType = UIReturnKeyDone;
     lastNameField.returnKeyType = UIReturnKeyDone;
-    phoneNumberField.delegate = self;
+    phoneNumberField.returnKeyType = UIReturnKeyDone;
     schoolNameField.returnKeyType = UIReturnKeyDone;
     // degreeControl.delegate = self;
     // graduationDatePicker.delegate = self;
