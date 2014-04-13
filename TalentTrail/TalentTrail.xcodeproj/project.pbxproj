@@ -35,6 +35,7 @@
 		0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B128118FA47570047F80F /* EditProfileJobsCell.m */; };
 		0A1B128618FA5E620047F80F /* SideBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B128518FA5E620047F80F /* SideBarCell.xib */; };
 		0A1B128918FA5EE90047F80F /* SideBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B128818FA5EE90047F80F /* SideBarCell.m */; };
+		0A1B129018FACE060047F80F /* DashboardDetailsControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B128F18FACE060047F80F /* DashboardDetailsControllerViewController.m */; };
 		0A40F4E118FA059E00355133 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A40F4E018FA059E00355133 /* JobCell.m */; };
 		0A40F4E318FA060600355133 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A40F4E218FA060600355133 /* JobCell.xib */; };
 		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
@@ -111,6 +112,8 @@
 		0A1B128518FA5E620047F80F /* SideBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideBarCell.xib; sourceTree = "<group>"; };
 		0A1B128718FA5EE90047F80F /* SideBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarCell.h; sourceTree = "<group>"; };
 		0A1B128818FA5EE90047F80F /* SideBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarCell.m; sourceTree = "<group>"; };
+		0A1B128E18FACE060047F80F /* DashboardDetailsControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardDetailsControllerViewController.h; sourceTree = "<group>"; };
+		0A1B128F18FACE060047F80F /* DashboardDetailsControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardDetailsControllerViewController.m; sourceTree = "<group>"; };
 		0A40F4DF18FA059E00355133 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
 		0A40F4E018FA059E00355133 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
 		0A40F4E218FA060600355133 /* JobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 				DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */,
 				DE3E2F8218F9D95C001289EB /* DashboardCell.h */,
 				DE3E2F8318F9D95C001289EB /* DashboardCell.m */,
+				0A1B128E18FACE060047F80F /* DashboardDetailsControllerViewController.h */,
+				0A1B128F18FACE060047F80F /* DashboardDetailsControllerViewController.m */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 				0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */,
+				0A1B129018FACE060047F80F /* DashboardDetailsControllerViewController.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				0A1B128918FA5EE90047F80F /* SideBarCell.m in Sources */,
 				0A1B127A18FA36E50047F80F /* EditProfileJobsViewController.m in Sources */,
