@@ -7,6 +7,8 @@
 //
 
 #import "EditProfileViewController.h"
+#import "AppDelegate.h"
+#import "Profile.h"
 
 @interface EditProfileViewController ()
 
@@ -23,7 +25,7 @@
 @synthesize graduationYear;
 @synthesize majorField;
 @synthesize gpaField;
-
+@synthesize email;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -65,6 +67,17 @@
     graduationYear.returnKeyType = UIReturnKeyDone;
     majorField.returnKeyType = UIReturnKeyDone;
     gpaField.returnKeyType = UIReturnKeyDone;
+    
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    firstNameField.text = [appDelegate.userProfile firstname];
+    lastNameField.text = [appDelegate.userProfile lastname];
+    phoneNumberField.text = [appDelegate.userProfile phone];
+    schoolNameField.text = [appDelegate.userProfile school];
+    graduationMonth.text = [appDelegate.userProfile graduationmonth];
+    graduationYear.text = [appDelegate.userProfile graduationyear];
+    majorField.text = [appDelegate.userProfile major];
+    gpaField.text = [appDelegate.userProfile gpa];
+    
 
 }
 //also need to make a function for when picker and control change to update
@@ -80,7 +93,30 @@
     
     //save all new info
     
+//    NSArray *vcs = self.navigationController.viewControllers;
+//    [vcs objectAtIndex:([vcs count]-1)].
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    Profile *p = [[Profile alloc] init];
+    [p setFirstname:firstNameField.text];
+    [p setLastname:lastNameField.text];
+    [p setPhone:phoneNumberField.text];
+    [p setSchool:schoolNameField.text];
+    [p setFirstname:firstNameField.text];
+    NSString * a = [degreeControl titleForSegmentAtIndex:degreeControl.selectedSegmentIndex];
+    [p setDegree:a];
+    [p setGraduationmonth:graduationMonth.text];
+    [p setGraduationyear:graduationYear.text];
+    [p setMajor:majorField.text];
+    [p setGpa:gpaField.text];
+    [p setEmail:email.text];
+    
+    appDelegate.userProfile = p;
+    
+    NSLog(@"Name: %@", [p firstname]);
     [self.navigationController popViewControllerAnimated:YES];
+    NSArray *vcs = self.navigationController.viewControllers;
+    [[vcs objectAtIndex:([vcs count]-1)] viewDidLoad];
+
 }
 
 

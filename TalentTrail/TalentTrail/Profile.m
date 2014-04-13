@@ -10,4 +10,16 @@
 
 @implementation Profile
 
+@synthesize firstname;
+@synthesize lastname;
+@synthesize phone;
+
+@synthesize school;
+@synthesize degree;
+@synthesize graduationmonth;
+@synthesize graduationyear;
+@synthesize major;
+@synthesize gpa;
+@synthesize email;
+
 @end

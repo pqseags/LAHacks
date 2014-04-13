@@ -64,9 +64,9 @@ int currSize;
     
     // Configure the cell...
     
-    [cell.contentView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    /*[cell.contentView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
     [cell.contentView.layer setBorderWidth:2.0f];
-    
+    */
     
     return cell;
 }

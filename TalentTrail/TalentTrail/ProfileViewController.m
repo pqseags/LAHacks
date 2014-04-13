@@ -8,13 +8,22 @@
 
 #import "ProfileViewController.h"
 #import "SWRevealViewController.h"
-
+#import "AppDelegate.h"
 @interface ProfileViewController ()
 
 @end
 
 @implementation ProfileViewController
-
+@synthesize FirstName;
+@synthesize LastName;
+@synthesize Email;
+@synthesize School;
+@synthesize Degree;
+@synthesize GraduationYear;
+@synthesize GraduationMonth;
+@synthesize GPA;
+@synthesize Major;
+@synthesize Phone;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -45,7 +54,35 @@
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
     //set back button arrow color
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    //FirstName.text = [appDelegate.userProfile firstname];
+    if(appDelegate.userProfile != nil){
+        FirstName.text = [appDelegate.userProfile firstname];
+        LastName.text = [appDelegate.userProfile lastname];
+        Email.text = [appDelegate.userProfile email];
+        School.text = [appDelegate.userProfile school];
+        Degree.text = [appDelegate.userProfile degree];
+        GraduationMonth.text = [appDelegate.userProfile graduationmonth];
+        GraduationYear.text = [appDelegate.userProfile graduationyear];
+        Major.text = [appDelegate.userProfile major];
+        Phone.text = [appDelegate.userProfile phone];
+        GPA.text = [appDelegate.userProfile gpa];
+    }
 }
+
+/*- (void)updateData{
+    AppDelegate *appDelegate = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    FirstName.text = [appDelegate.userProfile firstname];
+    LastName.text = [appDelegate.userProfile lastname];
+    Email.text = [appDelegate.userProfile email];
+    School.text = [appDelegate.userProfile school];
+    Degree.text = [appDelegate.userProfile degree];
+    GraduationMonth.text = [appDelegate.userProfile graduationmonth];
+    GraduationYear.text = [appDelegate.userProfile graduationyear];
+    Phone.text = [appDelegate.userProfile phone];
+    GPA.text = [appDelegate.userProfile gpa];
+
+}*/
 
 - (void)didReceiveMemoryWarning
 {
