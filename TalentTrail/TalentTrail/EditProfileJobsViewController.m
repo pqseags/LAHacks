@@ -7,13 +7,14 @@
 //
 
 #import "EditProfileJobsViewController.h"
+#import "EditProfileJobsCell.h"
 
 @interface EditProfileJobsViewController ()
 
 @end
 
 @implementation EditProfileJobsViewController
-
+int currSize;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,12 +28,57 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    currSize = 1;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return currSize;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"EditProfileJobsCell";
+    // ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //    if(cell==nil)
+    //    {
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"EditProfileJobsCell" owner:self options:nil];
+    EditProfileJobsCell *cell = [nib objectAtIndex:0];
+    //    }
+    
+    // Configure the cell...
+    
+    [cell.contentView.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [cell.contentView.layer setBorderWidth:2.0f];
+    
+    
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44;
+}
+
+- (IBAction)addItems:(id)sender {
+    // I thought it was as simple as this, but it doesn't work
+    currSize++;
+    [self.tableView reloadData];
 }
 
 @end

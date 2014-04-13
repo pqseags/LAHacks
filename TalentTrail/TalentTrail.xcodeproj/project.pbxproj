@@ -27,9 +27,12 @@
 		0A02C33D18F9593100471161 /* reddish.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32C18F9593100471161 /* reddish.png */; };
 		0A02C33E18F9593100471161 /* redi.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32D18F9593100471161 /* redi.png */; };
 		0A1B127218FA0B7A0047F80F /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127118FA0B7A0047F80F /* google.png */; };
-		0A1B127418FA2E320047F80F /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127318FA2E320047F80F /* Profile.xib */; };
+		0A1B127418FA2E320047F80F /* EditProfileSkillsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127318FA2E320047F80F /* EditProfileSkillsCell.xib */; };
 		0A1B127718FA36770047F80F /* EditProfileSkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B127618FA36770047F80F /* EditProfileSkillsViewController.m */; };
 		0A1B127A18FA36E50047F80F /* EditProfileJobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B127918FA36E50047F80F /* EditProfileJobsViewController.m */; };
+		0A1B127D18FA3E0C0047F80F /* EditProfileSkillsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B127C18FA3E0C0047F80F /* EditProfileSkillsCell.m */; };
+		0A1B127F18FA43650047F80F /* EditProfileJobsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127E18FA43650047F80F /* EditProfileJobsCell.xib */; };
+		0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B128118FA47570047F80F /* EditProfileJobsCell.m */; };
 		0A40F4E118FA059E00355133 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A40F4E018FA059E00355133 /* JobCell.m */; };
 		0A40F4E318FA060600355133 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A40F4E218FA060600355133 /* JobCell.xib */; };
 		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
@@ -93,11 +96,16 @@
 		0A02C32C18F9593100471161 /* reddish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddish.png; sourceTree = "<group>"; };
 		0A02C32D18F9593100471161 /* redi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redi.png; sourceTree = "<group>"; };
 		0A1B127118FA0B7A0047F80F /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
-		0A1B127318FA2E320047F80F /* Profile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
+		0A1B127318FA2E320047F80F /* EditProfileSkillsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileSkillsCell.xib; sourceTree = "<group>"; };
 		0A1B127518FA36770047F80F /* EditProfileSkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileSkillsViewController.h; sourceTree = "<group>"; };
 		0A1B127618FA36770047F80F /* EditProfileSkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileSkillsViewController.m; sourceTree = "<group>"; };
 		0A1B127818FA36E50047F80F /* EditProfileJobsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileJobsViewController.h; sourceTree = "<group>"; };
 		0A1B127918FA36E50047F80F /* EditProfileJobsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileJobsViewController.m; sourceTree = "<group>"; };
+		0A1B127B18FA3E0C0047F80F /* EditProfileSkillsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileSkillsCell.h; sourceTree = "<group>"; };
+		0A1B127C18FA3E0C0047F80F /* EditProfileSkillsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileSkillsCell.m; sourceTree = "<group>"; };
+		0A1B127E18FA43650047F80F /* EditProfileJobsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileJobsCell.xib; sourceTree = "<group>"; };
+		0A1B128018FA47570047F80F /* EditProfileJobsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileJobsCell.h; sourceTree = "<group>"; };
+		0A1B128118FA47570047F80F /* EditProfileJobsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileJobsCell.m; sourceTree = "<group>"; };
 		0A40F4DF18FA059E00355133 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
 		0A40F4E018FA059E00355133 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
 		0A40F4E218FA060600355133 /* JobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
@@ -260,11 +268,16 @@
 				DE3E2F5318F920AF001289EB /* Profile.m */,
 				DE3E2F8518FA1C1B001289EB /* EditProfileViewController.h */,
 				DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */,
-				0A1B127318FA2E320047F80F /* Profile.xib */,
+				0A1B127318FA2E320047F80F /* EditProfileSkillsCell.xib */,
 				0A1B127518FA36770047F80F /* EditProfileSkillsViewController.h */,
 				0A1B127618FA36770047F80F /* EditProfileSkillsViewController.m */,
 				0A1B127818FA36E50047F80F /* EditProfileJobsViewController.h */,
 				0A1B127918FA36E50047F80F /* EditProfileJobsViewController.m */,
+				0A1B127B18FA3E0C0047F80F /* EditProfileSkillsCell.h */,
+				0A1B127C18FA3E0C0047F80F /* EditProfileSkillsCell.m */,
+				0A1B127E18FA43650047F80F /* EditProfileJobsCell.xib */,
+				0A1B128018FA47570047F80F /* EditProfileJobsCell.h */,
+				0A1B128118FA47570047F80F /* EditProfileJobsCell.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -428,6 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A02C33718F9593100471161 /* logo.png in Resources */,
+				0A1B127F18FA43650047F80F /* EditProfileJobsCell.xib in Resources */,
 				DE3E2F2718F91551001289EB /* Images.xcassets in Resources */,
 				0A02C33B18F9593100471161 /* orange.png in Resources */,
 				0A02C33E18F9593100471161 /* redi.png in Resources */,
@@ -440,7 +454,7 @@
 				0A1B127218FA0B7A0047F80F /* google.png in Resources */,
 				0A02C32F18F9593100471161 /* background.png in Resources */,
 				0A02C33618F9593100471161 /* koala.png in Resources */,
-				0A1B127418FA2E320047F80F /* Profile.xib in Resources */,
+				0A1B127418FA2E320047F80F /* EditProfileSkillsCell.xib in Resources */,
 				0A02C33418F9593100471161 /* intel.png in Resources */,
 				DE3E2F1618F91551001289EB /* InfoPlist.strings in Resources */,
 				0A02C33318F9593100471161 /* green.png in Resources */,
@@ -472,6 +486,8 @@
 				DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */,
 				DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */,
 				DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */,
+				0A1B127D18FA3E0C0047F80F /* EditProfileSkillsCell.m in Sources */,
+				0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,

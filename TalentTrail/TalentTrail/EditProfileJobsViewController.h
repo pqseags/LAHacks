@@ -10,5 +10,5 @@
 
 @interface EditProfileJobsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+- (IBAction)addItems:(id)sender;
 @end

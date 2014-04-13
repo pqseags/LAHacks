@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0GW-0L-q2m">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0GW-0L-q2m" customClass="EditProfileSkillsCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0GW-0L-q2m" id="nYq-K1-SfU">
@@ -46,6 +46,13 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="Fraction" destination="QcB-30-Shg" id="mxq-GT-amS"/>
+                <outlet property="Rating" destination="0Li-Sb-xMl" id="mb1-7L-zKu"/>
+                <outlet property="RatingEntry" destination="MN0-5x-bO4" id="504-gh-Z8Z"/>
+                <outlet property="Skill" destination="wrM-Df-XAS" id="Ub4-SX-JEa"/>
+                <outlet property="SkillEntry" destination="quI-vc-Pbq" id="T4C-0f-oP1"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>
