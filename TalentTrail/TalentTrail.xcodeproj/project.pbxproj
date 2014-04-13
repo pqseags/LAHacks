@@ -26,9 +26,9 @@
 		0A02C33C18F9593100471161 /* purple.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32B18F9593100471161 /* purple.PNG */; };
 		0A02C33D18F9593100471161 /* reddish.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32C18F9593100471161 /* reddish.PNG */; };
 		0A02C33E18F9593100471161 /* redi.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32D18F9593100471161 /* redi.PNG */; };
+		0A1B127218FA0B7A0047F80F /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127118FA0B7A0047F80F /* google.png */; };
 		0A40F4E118FA059E00355133 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A40F4E018FA059E00355133 /* JobCell.m */; };
 		0A40F4E318FA060600355133 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A40F4E218FA060600355133 /* JobCell.xib */; };
-		0A40F4E518FA07E200355133 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A40F4E418FA07E200355133 /* google.png */; };
 		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
 		DE3E2F0E18F91551001289EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0D18F91551001289EB /* CoreGraphics.framework */; };
 		DE3E2F1018F91551001289EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0F18F91551001289EB /* UIKit.framework */; };
@@ -88,10 +88,10 @@
 		0A02C32B18F9593100471161 /* purple.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.PNG; sourceTree = "<group>"; };
 		0A02C32C18F9593100471161 /* reddish.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddish.PNG; sourceTree = "<group>"; };
 		0A02C32D18F9593100471161 /* redi.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redi.PNG; sourceTree = "<group>"; };
+		0A1B127118FA0B7A0047F80F /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
 		0A40F4DF18FA059E00355133 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
 		0A40F4E018FA059E00355133 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
 		0A40F4E218FA060600355133 /* JobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
-		0A40F4E418FA07E200355133 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google.png; path = "../../../HackSC2014/TalentTrail/res/drawable-hdpi/google.png"; sourceTree = "<group>"; };
 		DE3E2F0818F91551001289EB /* TalentTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3E2F0B18F91551001289EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE3E2F0D18F91551001289EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -265,7 +265,7 @@
 		DE3E2F7118F9956F001289EB /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				0A40F4E418FA07E200355133 /* google.png */,
+				0A1B127118FA0B7A0047F80F /* google.png */,
 				0A02C31C18F9593100471161 /* apple.png */,
 				0A02C31D18F9593100471161 /* background.png */,
 				0A02C31E18F9593100471161 /* blue.PNG */,
@@ -419,7 +419,7 @@
 				0A02C33A18F9593100471161 /* nvidia.jpg in Resources */,
 				0A02C33818F9593100471161 /* microsoft.png in Resources */,
 				0A02C33C18F9593100471161 /* purple.PNG in Resources */,
-				0A40F4E518FA07E200355133 /* google.png in Resources */,
+				0A1B127218FA0B7A0047F80F /* google.png in Resources */,
 				0A02C32F18F9593100471161 /* background.png in Resources */,
 				0A02C33618F9593100471161 /* koala.png in Resources */,
 				0A02C33418F9593100471161 /* intel.png in Resources */,
