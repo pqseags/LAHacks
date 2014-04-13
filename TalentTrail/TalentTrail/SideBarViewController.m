@@ -57,6 +57,10 @@
    
 //[HexColor colorWithHexString:@"F48F16"]
     
+    UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 20.0)];
+    view.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
+    [self.view addSubview:view];
+    
     
 }
 
@@ -96,17 +100,21 @@
     SideBarCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     */
     cell.backgroundColor =[UIColor lightGrayColor];
+    UIImage * whiteImage = [[UIImage alloc] init];
     if (indexPath.section ==0){
-    cell.Item.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
-        cell.Picture.image = [UIImage imageNamed:[menuPictures objectAtIndex:indexPath.row]];
+        cell.Item.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
+        whiteImage = [UIImage imageNamed:[menuPictures objectAtIndex:indexPath.row]];
     }
     else{
         cell.Item.text = [[settingsMenuItems objectAtIndex:indexPath.row] capitalizedString];
-        cell.Picture.image = [UIImage imageNamed:[settingsMenuPictures objectAtIndex:indexPath.row]];
+        whiteImage = [UIImage imageNamed:[settingsMenuPictures objectAtIndex:indexPath.row]];
 
     }
-    //need to uncomment this line in order to set the text color...
+    
+    //set text and picture color
     cell.Item.textColor = [UIColor whiteColor];
+    cell.Picture.image = [whiteImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    cell.Picture.tintColor = [UIColor whiteColor];
     return cell;
     
 }
@@ -131,6 +139,48 @@
         return @"";
     else return @"Help and Settings";
 }
+
+//what happens if a sidebar item is clicked!!!
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   
+    if (indexPath.section == 0){
+        if (indexPath.row == 0){
+            [self performSegueWithIdentifier:@"revealDashboard" sender:self];
+        }
+        else if (indexPath.row == 1){
+            [self performSegueWithIdentifier:@"revealJobs" sender:self];
+        }
+        else if (indexPath.row == 2){
+            [self performSegueWithIdentifier:@"revealConnections" sender:self];
+        }
+
+        else if (indexPath.row == 3){
+            [self performSegueWithIdentifier:@"revealProfile" sender:self];
+        }
+    }
+    
+    else if (indexPath.section == 1){
+        if (indexPath.row == 0){
+            //Settings
+        }
+        else if (indexPath.row == 1){
+            //Help
+        }
+        else if (indexPath.row == 2){
+            //Feedback
+        }
+        
+        else if (indexPath.row == 3){
+            //Logout
+            [self performSegueWithIdentifier:@"logout" sender:self];
+        }
+    }
+
+    
+}
+
 
 - (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
 {
