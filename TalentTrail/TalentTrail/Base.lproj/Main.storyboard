@@ -922,31 +922,11 @@
     </scenes>
     <resources>
         <image name="background" width="197" height="181"/>
-        <image name="background" width="197" height="181"/>
         <image name="ball_point_pen-25" width="25" height="25"/>
         <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="menu-25" width="25" height="25"/>
-        <image name="menu-25" width="25" height="25"/>
-        <image name="menu-25" width="25" height="25"/>
         <image name="menu-25" width="25" height="25"/>
         <image name="search-25" width="25" height="25"/>
-        <image name="search-25" width="25" height="25"/>
-        <image name="search-25" width="25" height="25"/>
         <image name="second" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="underline" width="268" height="5"/>
-        <image name="underline" width="268" height="5"/>
-        <image name="underline" width="268" height="5"/>
-        <image name="underline" width="268" height="5"/>
-        <image name="underline" width="268" height="5"/>
-        <image name="underline" width="268" height="5"/>
-        <image name="underline" width="268" height="5"/>
         <image name="underline" width="268" height="5"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

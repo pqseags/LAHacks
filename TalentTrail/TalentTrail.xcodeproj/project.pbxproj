@@ -33,6 +33,8 @@
 		0A1B127D18FA3E0C0047F80F /* EditProfileSkillsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B127C18FA3E0C0047F80F /* EditProfileSkillsCell.m */; };
 		0A1B127F18FA43650047F80F /* EditProfileJobsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127E18FA43650047F80F /* EditProfileJobsCell.xib */; };
 		0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B128118FA47570047F80F /* EditProfileJobsCell.m */; };
+		0A1B128618FA5E620047F80F /* SideBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B128518FA5E620047F80F /* SideBarCell.xib */; };
+		0A1B128918FA5EE90047F80F /* SideBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B128818FA5EE90047F80F /* SideBarCell.m */; };
 		0A40F4E118FA059E00355133 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A40F4E018FA059E00355133 /* JobCell.m */; };
 		0A40F4E318FA060600355133 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A40F4E218FA060600355133 /* JobCell.xib */; };
 		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
@@ -106,6 +108,9 @@
 		0A1B127E18FA43650047F80F /* EditProfileJobsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileJobsCell.xib; sourceTree = "<group>"; };
 		0A1B128018FA47570047F80F /* EditProfileJobsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileJobsCell.h; sourceTree = "<group>"; };
 		0A1B128118FA47570047F80F /* EditProfileJobsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileJobsCell.m; sourceTree = "<group>"; };
+		0A1B128518FA5E620047F80F /* SideBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideBarCell.xib; sourceTree = "<group>"; };
+		0A1B128718FA5EE90047F80F /* SideBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideBarCell.h; sourceTree = "<group>"; };
+		0A1B128818FA5EE90047F80F /* SideBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideBarCell.m; sourceTree = "<group>"; };
 		0A40F4DF18FA059E00355133 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
 		0A40F4E018FA059E00355133 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
 		0A40F4E218FA060600355133 /* JobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
@@ -336,6 +341,9 @@
 				DE3E2F7518F99671001289EB /* SWRevealViewController.m */,
 				DE3E2F7718F9967E001289EB /* SideBarViewController.h */,
 				DE3E2F7818F9967E001289EB /* SideBarViewController.m */,
+				0A1B128518FA5E620047F80F /* SideBarCell.xib */,
+				0A1B128718FA5EE90047F80F /* SideBarCell.h */,
+				0A1B128818FA5EE90047F80F /* SideBarCell.m */,
 			);
 			name = SideBar;
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 				0A02C33318F9593100471161 /* green.png in Resources */,
 				DE3E2F1F18F91551001289EB /* Main.storyboard in Resources */,
 				0A02C33918F9593100471161 /* nasa.png in Resources */,
+				0A1B128618FA5E620047F80F /* SideBarCell.xib in Resources */,
 				0A02C33218F9593100471161 /* facebook.gif in Resources */,
 				0A02C31618F9588600471161 /* ConnectionCell.xib in Resources */,
 				0A02C33D18F9593100471161 /* reddish.png in Resources */,
@@ -491,6 +500,7 @@
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
+				0A1B128918FA5EE90047F80F /* SideBarCell.m in Sources */,
 				0A1B127A18FA36E50047F80F /* EditProfileJobsViewController.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */,

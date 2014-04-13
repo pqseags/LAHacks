@@ -9,15 +9,20 @@
 #import "SideBarViewController.h"
 #import "SWRevealViewController.h"
 #import "HexColor.h"
+#import "SideBarCell.h"
 
 @interface SideBarViewController ()
 @property (nonatomic, strong) NSArray *menuItems;
 @property (nonatomic, strong) NSArray *settingsMenuItems;
+@property (nonatomic, strong) NSArray *menuPictures;
+@property (nonatomic, strong) NSArray *settingsMenuPictures;
 @end
 
 @implementation SideBarViewController
 @synthesize menuItems;
 @synthesize settingsMenuItems;
+@synthesize menuPictures;
+@synthesize settingsMenuPictures;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -44,9 +49,12 @@
     
     menuItems = @[@"dashboard", @"jobs", @"connections", @"profile"];
     settingsMenuItems = @[@"settings", @"help", @"feedback", @"logout"];
+    menuPictures = @[@"dashboard.png", @"jobs.png", @"connections.png", @"profile.png"];
+    settingsMenuPictures = @[@"settings.png", @"help.png", @"feedback.png", @"logout.png"];
     
     self.tableView.backgroundColor = [UIColor lightGrayColor];
     self.tableView.separatorColor = [UIColor lightGrayColor];
+   
 //[HexColor colorWithHexString:@"F48F16"]
     
     
@@ -76,22 +84,45 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = [[NSString alloc] init];
-    if (indexPath.section ==0){
+    static NSString *CellIdentifier = @"SideBarCell";
+    
+    NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SideBarCell" owner:self options:nil];
+    SideBarCell *cell = [nib objectAtIndex:0];
+    /*if (indexPath.section ==0){
         CellIdentifier = [self.menuItems objectAtIndex:indexPath.row];
     }
     else CellIdentifier = [self.settingsMenuItems objectAtIndex:indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+    SideBarCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    */
     cell.backgroundColor =[UIColor lightGrayColor];
-    cell.textLabel.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
-    
+    if (indexPath.section ==0){
+    cell.Item.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
+        cell.Picture.image = [UIImage imageNamed:[menuPictures objectAtIndex:indexPath.row]];
+    }
+    else{
+        cell.Item.text = [[settingsMenuItems objectAtIndex:indexPath.row] capitalizedString];
+        cell.Picture.image = [UIImage imageNamed:[settingsMenuPictures objectAtIndex:indexPath.row]];
+
+    }
     //need to uncomment this line in order to set the text color...
-    
-    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.Item.textColor = [UIColor whiteColor];
     return cell;
     
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    // Background color
+    
+    
+    // Text Color
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    
+    // Another way to set the background color
+    // Note: does not preserve gradient effect of original header
+    // header.contentView.backgroundColor = [UIColor blackColor];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
