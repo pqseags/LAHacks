@@ -16,7 +16,8 @@
 
 @property IBOutlet UITextField *schoolNameField;
 @property IBOutlet UISegmentedControl *degreeControl;
-@property IBOutlet UIDatePicker *graduationDatePicker;  //need to change to uidatepicker in storyboard
+@property IBOutlet UITextField *graduationMonth;
+@property IBOutlet UITextField *graduationYear;
 @property IBOutlet UITextField *majorField;
 @property IBOutlet UITextField *gpaField;
 

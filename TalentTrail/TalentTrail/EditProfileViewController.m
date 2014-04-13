@@ -19,7 +19,8 @@
 @synthesize phoneNumberField;
 @synthesize schoolNameField;
 @synthesize degreeControl;
-@synthesize graduationDatePicker;
+@synthesize graduationMonth;
+@synthesize graduationYear;
 @synthesize majorField;
 @synthesize gpaField;
 
@@ -46,6 +47,8 @@
     schoolNameField.delegate = self;
    // degreeControl.delegate = self;
    // graduationDatePicker.delegate = self;
+    graduationMonth.delegate = self;
+    graduationYear.delegate = self;
     majorField.delegate = self;
     gpaField.delegate = self;
     
@@ -58,6 +61,8 @@
     schoolNameField.returnKeyType = UIReturnKeyDone;
     // degreeControl.delegate = self;
     // graduationDatePicker.delegate = self;
+    graduationMonth.returnKeyType = UIReturnKeyDone;
+    graduationYear.returnKeyType = UIReturnKeyDone;
     majorField.returnKeyType = UIReturnKeyDone;
     gpaField.returnKeyType = UIReturnKeyDone;
 
