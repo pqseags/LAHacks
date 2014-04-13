@@ -27,6 +27,7 @@
 		0A02C33D18F9593100471161 /* reddish.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32C18F9593100471161 /* reddish.PNG */; };
 		0A02C33E18F9593100471161 /* redi.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 0A02C32D18F9593100471161 /* redi.PNG */; };
 		0A1B127218FA0B7A0047F80F /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127118FA0B7A0047F80F /* google.png */; };
+		0A1B127418FA2E320047F80F /* Profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B127318FA2E320047F80F /* Profile.xib */; };
 		0A40F4E118FA059E00355133 /* JobCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A40F4E018FA059E00355133 /* JobCell.m */; };
 		0A40F4E318FA060600355133 /* JobCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A40F4E218FA060600355133 /* JobCell.xib */; };
 		DE3E2F0C18F91551001289EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E2F0B18F91551001289EB /* Foundation.framework */; };
@@ -90,6 +91,7 @@
 		0A02C32C18F9593100471161 /* reddish.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddish.PNG; sourceTree = "<group>"; };
 		0A02C32D18F9593100471161 /* redi.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redi.PNG; sourceTree = "<group>"; };
 		0A1B127118FA0B7A0047F80F /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
+		0A1B127318FA2E320047F80F /* Profile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Profile.xib; sourceTree = "<group>"; };
 		0A40F4DF18FA059E00355133 /* JobCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCell.h; sourceTree = "<group>"; };
 		0A40F4E018FA059E00355133 /* JobCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCell.m; sourceTree = "<group>"; };
 		0A40F4E218FA060600355133 /* JobCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JobCell.xib; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				DE3E2F5318F920AF001289EB /* Profile.m */,
 				DE3E2F8518FA1C1B001289EB /* EditProfileViewController.h */,
 				DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */,
+				0A1B127318FA2E320047F80F /* Profile.xib */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				0A1B127218FA0B7A0047F80F /* google.png in Resources */,
 				0A02C32F18F9593100471161 /* background.png in Resources */,
 				0A02C33618F9593100471161 /* koala.png in Resources */,
+				0A1B127418FA2E320047F80F /* Profile.xib in Resources */,
 				0A02C33418F9593100471161 /* intel.png in Resources */,
 				DE3E2F1618F91551001289EB /* InfoPlist.strings in Resources */,
 				0A02C33318F9593100471161 /* green.PNG in Resources */,
