@@ -64,6 +64,9 @@
 		DE3E2F8018F9C0A1001289EB /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */; };
 		DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8318F9D95C001289EB /* DashboardCell.m */; };
 		DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */; };
+		DEFB76F41907A644001D171F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F31907A644001D171F /* SettingsViewController.m */; };
+		DEFB76F81907A664001D171F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F71907A664001D171F /* HelpViewController.m */; };
+		DEFB76FB1907A674001D171F /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76FA1907A674001D171F /* FeedbackViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +162,12 @@
 		DE3E2F8318F9D95C001289EB /* DashboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardCell.m; sourceTree = "<group>"; };
 		DE3E2F8518FA1C1B001289EB /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		DEFB76F21907A644001D171F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		DEFB76F31907A644001D171F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		DEFB76F61907A664001D171F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		DEFB76F71907A664001D171F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		DEFB76F91907A674001D171F /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		DEFB76FA1907A674001D171F /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +233,7 @@
 				DE3E2F1D18F91551001289EB /* Main.storyboard */,
 				DE3E2F2018F91551001289EB /* FirstViewController.h */,
 				DE3E2F2118F91551001289EB /* FirstViewController.m */,
+				DEFB76F11907A5EE001D171F /* Extra VCs */,
 				DE3E2F7318F99654001289EB /* SideBar */,
 				DE3E2F5918F928D1001289EB /* Login */,
 				DE3E2F7A18F9993E001289EB /* Dashboard */,
@@ -377,6 +387,19 @@
 			name = Jobs;
 			sourceTree = "<group>";
 		};
+		DEFB76F11907A5EE001D171F /* Extra VCs */ = {
+			isa = PBXGroup;
+			children = (
+				DEFB76F21907A644001D171F /* SettingsViewController.h */,
+				DEFB76F31907A644001D171F /* SettingsViewController.m */,
+				DEFB76F61907A664001D171F /* HelpViewController.h */,
+				DEFB76F71907A664001D171F /* HelpViewController.m */,
+				DEFB76F91907A674001D171F /* FeedbackViewController.h */,
+				DEFB76FA1907A674001D171F /* FeedbackViewController.m */,
+			);
+			name = "Extra VCs";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -500,6 +523,7 @@
 				DE3E2F4B18F91E3D001289EB /* JobsViewController.m in Sources */,
 				DE3E2F4818F91E30001289EB /* DashboardViewController.m in Sources */,
 				DE3E2F7618F99671001289EB /* SWRevealViewController.m in Sources */,
+				DEFB76F41907A644001D171F /* SettingsViewController.m in Sources */,
 				0A1B127D18FA3E0C0047F80F /* EditProfileSkillsCell.m in Sources */,
 				0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
@@ -507,10 +531,12 @@
 				0A1B129018FACE060047F80F /* DashboardDetailsControllerViewController.m in Sources */,
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				0A1B128918FA5EE90047F80F /* SideBarCell.m in Sources */,
+				DEFB76FB1907A674001D171F /* FeedbackViewController.m in Sources */,
 				0A1B127A18FA36E50047F80F /* EditProfileJobsViewController.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */,
 				0A02C31218F9571500471161 /* ConnectionCell.m in Sources */,
+				DEFB76F81907A664001D171F /* HelpViewController.m in Sources */,
 				DE3E2F7E18F9B0C4001289EB /* HexColor.m in Sources */,
 				DE3E2F5818F928CA001289EB /* RegisterViewController.m in Sources */,
 				0A02C31718F9588600471161 /* ConnectionViewController.m in Sources */,

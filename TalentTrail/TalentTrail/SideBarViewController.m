@@ -16,6 +16,9 @@
 @property (nonatomic, strong) NSArray *settingsMenuItems;
 @property (nonatomic, strong) NSArray *menuPictures;
 @property (nonatomic, strong) NSArray *settingsMenuPictures;
+
+@property (nonatomic, strong) NSIndexPath * clickedIndexPath;
+
 @end
 
 @implementation SideBarViewController
@@ -23,6 +26,7 @@
 @synthesize settingsMenuItems;
 @synthesize menuPictures;
 @synthesize settingsMenuPictures;
+@synthesize clickedIndexPath;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -144,7 +148,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   
+   //remember index path for title of next page
+    clickedIndexPath = indexPath;
+    
+    
     if (indexPath.section == 0){
         if (indexPath.row == 0){
             [self performSegueWithIdentifier:@"revealDashboard" sender:self];
@@ -164,12 +171,18 @@
     else if (indexPath.section == 1){
         if (indexPath.row == 0){
             //Settings
+            [self performSegueWithIdentifier:@"revealSettings" sender:self];
+
         }
         else if (indexPath.row == 1){
             //Help
+            [self performSegueWithIdentifier:@"revealHelp" sender:self];
+
         }
         else if (indexPath.row == 2){
             //Feedback
+            [self performSegueWithIdentifier:@"revealFeedback" sender:self];
+
         }
         
         else if (indexPath.row == 3){
@@ -187,7 +200,13 @@
     
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
-    destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
+    
+    if (clickedIndexPath.section ==0)
+        destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
+    else if (clickedIndexPath.section ==1)
+        destViewController.title = [[settingsMenuItems objectAtIndex:indexPath.row] capitalizedString];
+    else destViewController.title = @"Not Found";
+    
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
         SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;

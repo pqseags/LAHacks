@@ -132,6 +132,9 @@
                         <segue destination="QzW-fr-KOq" kind="custom" identifier="revealProfile" customClass="SWRevealViewControllerSegue" id="rxd-kd-5Do"/>
                         <segue destination="t7y-ca-Pgc" kind="custom" identifier="revealDashboard" customClass="SWRevealViewControllerSegue" id="mCB-nr-zvw"/>
                         <segue destination="CZ4-MO-1fc" kind="modal" identifier="logout" modalTransitionStyle="crossDissolve" id="g2x-0t-wsl"/>
+                        <segue destination="CKs-uZ-4gR" kind="custom" identifier="revealSettings" customClass="SWRevealViewControllerSegue" id="GfG-Wd-ZmE"/>
+                        <segue destination="gzh-7t-wjX" kind="custom" identifier="revealHelp" customClass="SWRevealViewControllerSegue" id="D2a-4Y-k95"/>
+                        <segue destination="F1a-aF-VnP" kind="custom" identifier="revealFeedback" customClass="SWRevealViewControllerSegue" id="2XN-TQ-eXN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BE1-du-Agx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -452,7 +455,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="Degree" destination="Dy2-YJ-c90" id="1pH-mg-iGQ"/>
                         <outlet property="Email" destination="Qaw-ZX-ACp" id="35R-8q-CDb"/>
@@ -471,6 +474,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3lB-N2-jIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="334"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="VSW-ap-vTs">
+            <objects>
+                <viewController id="CKs-uZ-4gR" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c9a-2O-JCT"/>
+                        <viewControllerLayoutGuide type="bottom" id="RcI-6K-Gwb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rDg-6h-2Ga">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hP0-L6-lGz">
+                        <barButtonItem key="leftBarButtonItem" image="menu-25" id="Hbs-AV-rbb"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sidebarButton" destination="Hbs-AV-rbb" id="bZJ-cE-zkd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzM-i9-6fn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="1786"/>
+        </scene>
+        <!--Feedback View Controller-->
+        <scene sceneID="1Op-CL-4xG">
+            <objects>
+                <viewController id="F1a-aF-VnP" customClass="FeedbackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g4S-H9-IUQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="N9H-nU-Qi6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H0r-kS-QaF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dSv-64-bSM">
+                        <barButtonItem key="leftBarButtonItem" image="menu-25" id="B5u-Ia-QnE"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sidebarButton" destination="B5u-Ia-QnE" id="hIx-gQ-ViM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdV-BL-Stn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="3186"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="8Vi-9Z-t0D">
+            <objects>
+                <viewController id="gzh-7t-wjX" customClass="HelpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="saP-pc-fSC"/>
+                        <viewControllerLayoutGuide type="bottom" id="dOQ-p4-e7g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7pU-LH-NHL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TXB-je-JXf">
+                        <barButtonItem key="leftBarButtonItem" image="menu-25" id="SjU-di-AaB"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="sidebarButton" destination="SjU-di-AaB" id="bcA-P8-h1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9G6-KV-NFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="2490"/>
         </scene>
         <!--Dashboard Details Controller View Controller-->
         <scene sceneID="oWZ-Sg-aKQ">
