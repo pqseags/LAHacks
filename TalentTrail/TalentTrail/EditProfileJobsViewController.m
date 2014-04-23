@@ -54,7 +54,7 @@ int currSize;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"EditProfileJobsCell";
+    //static NSString *CellIdentifier = @"EditProfileJobsCell";
     // ConnectionCell *cell = (ConnectionCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     //    if(cell==nil)
     //    {

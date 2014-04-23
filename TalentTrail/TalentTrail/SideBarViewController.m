@@ -88,7 +88,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"SideBarCell";
+    //static NSString *CellIdentifier = @"SideBarCell";
     
     NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SideBarCell" owner:self options:nil];
     SideBarCell *cell = [nib objectAtIndex:0];

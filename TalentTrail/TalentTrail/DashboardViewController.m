@@ -93,7 +93,7 @@ NSArray *Infos;
 {
 //    NSMutableArray *sectionArray = [self.dataArray objectAtIndex:section];
 //    return [sectionArray count];
-    NSLog(@"Number of items in dataArray: %d", [companyLabels count]);
+    NSLog(@"Number of items in dataArray: %lu", (unsigned long)[companyLabels count]);
     return [companyLabels count];
 }
 
