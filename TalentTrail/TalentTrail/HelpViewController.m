@@ -8,12 +8,15 @@
 
 #import "HelpViewController.h"
 #import "SWRevealViewController.h"
+#import "HexColor.h"
 
 @interface HelpViewController ()
 
 @end
 
 @implementation HelpViewController
+
+@synthesize infoText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +41,12 @@
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     //____________________SIDE BAR_______________________
+    
+    //make it orange
+    //[self.view setBackgroundColor: [HexColor colorWithHexString:@"F48F16"]];
+    //[infoText setBackgroundColor:[HexColor colorWithHexString:@"F48F16"]];
+    infoText.textColor = [HexColor colorWithHexString:@"F48F16"];
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,22 +1,22 @@
 //
-//  DashboardDetailsControllerViewController.m
+//  JobDetailViewController.m
 //  TalentTrail
 //
-//  Created by Kevin on 4/13/14.
+//  Created by Parker Seagren on 4/25/14.
 //  Copyright (c) 2014 TalentTrail. All rights reserved.
 //
 
-#import "DashboardDetailsControllerViewController.h"
+#import "JobDetailViewController.h"
 
-@interface DashboardDetailsControllerViewController ()
+@interface JobDetailViewController ()
 
 @end
 
-@implementation DashboardDetailsControllerViewController
-@synthesize Req;
-@synthesize Info;
-@synthesize ReqField;
-@synthesize InfoField;
+@implementation JobDetailViewController
+
+@synthesize companyNameLabel;
+@synthesize companyName;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,15 +30,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    ReqField.text = Req;
-    InfoField.text = Info;
-    
     
     //set back button color
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,nil] forState:UIControlStateNormal];
     //set back button arrow color
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
-
+    
+    //get data
+    companyNameLabel.text = companyName;
 }
 
 - (void)didReceiveMemoryWarning

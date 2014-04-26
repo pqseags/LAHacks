@@ -9,6 +9,7 @@
 #import "JobsViewController.h"
 #import "SWRevealViewController.h"
 #import "JobCell.h"
+#import "JobDetailViewController.h"
 
 @interface JobsViewController ()
 
@@ -94,6 +95,26 @@ NSArray *Pictures;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 119;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"JobDetail" sender:self];
+
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Segue Identifier: %@", segue.identifier);
+    
+    if ([segue.identifier isEqualToString:@"JobDetail"]) {
+        JobDetailViewController *destViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        destViewController.companyName = (NSString*)[Jobs objectAtIndex:indexPath.row];
+        [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+
+    }
+                                                               
 }
 
 

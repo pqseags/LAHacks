@@ -70,7 +70,7 @@ NSArray *Infos;
 //    UINib *cellNib = [UINib nibWithNibName:@"DashboardCell" bundle:nil];
 //    [self.collectionView registerNib:cellNib forCellWithReuseIdentifier:@"dashCell"];
     
-    //instead, create cells from DashboardCell class!
+    //instead, create cells from DashboardCell class
     [self.collectionView registerClass:[DashboardCell class] forCellWithReuseIdentifier:@"dashCell"];
     
     //create flowlayout
@@ -132,9 +132,11 @@ NSArray *Infos;
 }
 
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSLog(@"Segue Identifier: %@", segue.identifier);
-    if ([segue.identifier isEqualToString:@"JobDetails"]) {
+    
+        if ([segue.identifier isEqualToString:@"JobDetails"]) {
         NSArray *indexPaths = [self.collectionView indexPathsForSelectedItems];
         DashboardDetailsControllerViewController *destViewController = segue.destinationViewController;
         NSIndexPath *indexPath = [indexPaths objectAtIndex:0];

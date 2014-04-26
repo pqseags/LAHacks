@@ -67,6 +67,7 @@
 		DEFB76F41907A644001D171F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F31907A644001D171F /* SettingsViewController.m */; };
 		DEFB76F81907A664001D171F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F71907A664001D171F /* HelpViewController.m */; };
 		DEFB76FB1907A674001D171F /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76FA1907A674001D171F /* FeedbackViewController.m */; };
+		DEFB76FE190B33CF001D171F /* JobDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76FD190B33CF001D171F /* JobDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,8 @@
 		DEFB76F71907A664001D171F /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		DEFB76F91907A674001D171F /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		DEFB76FA1907A674001D171F /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
+		DEFB76FC190B33CF001D171F /* JobDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailViewController.h; sourceTree = "<group>"; };
+		DEFB76FD190B33CF001D171F /* JobDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +386,8 @@
 				0A40F4DF18FA059E00355133 /* JobCell.h */,
 				0A40F4E018FA059E00355133 /* JobCell.m */,
 				0A40F4E218FA060600355133 /* JobCell.xib */,
+				DEFB76FC190B33CF001D171F /* JobDetailViewController.h */,
+				DEFB76FD190B33CF001D171F /* JobDetailViewController.m */,
 			);
 			name = Jobs;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				DE3E2F5418F920AF001289EB /* Profile.m in Sources */,
 				0A1B128918FA5EE90047F80F /* SideBarCell.m in Sources */,
 				DEFB76FB1907A674001D171F /* FeedbackViewController.m in Sources */,
+				DEFB76FE190B33CF001D171F /* JobDetailViewController.m in Sources */,
 				0A1B127A18FA36E50047F80F /* EditProfileJobsViewController.m in Sources */,
 				DE3E2F4518F91A55001289EB /* LogInViewController.m in Sources */,
 				DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */,

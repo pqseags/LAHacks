@@ -201,7 +201,8 @@
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     
-    if (clickedIndexPath.section ==0)
+    if ([self.tableView indexPathForSelectedRow].section ==0)  //you dont need to save the clickIndexPath in a class property
+    //if (clickedIndexPath.section ==0)
         destViewController.title = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
     else if (clickedIndexPath.section ==1)
         destViewController.title = [[settingsMenuItems objectAtIndex:indexPath.row] capitalizedString];
