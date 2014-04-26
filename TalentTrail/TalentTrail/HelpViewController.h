@@ -11,5 +11,8 @@
 @interface HelpViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (weak, nonatomic) IBOutlet UITextView *infoText;
+@property (weak, nonatomic) IBOutlet UITextView *infoText2;
+@property (weak, nonatomic) IBOutlet UITextView *infoText3;
+
 
 @end

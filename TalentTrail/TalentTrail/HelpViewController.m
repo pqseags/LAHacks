@@ -17,6 +17,8 @@
 @implementation HelpViewController
 
 @synthesize infoText;
+@synthesize infoText2;
+@synthesize infoText3;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +48,9 @@
     //[self.view setBackgroundColor: [HexColor colorWithHexString:@"F48F16"]];
     //[infoText setBackgroundColor:[HexColor colorWithHexString:@"F48F16"]];
     infoText.textColor = [HexColor colorWithHexString:@"F48F16"];
+    infoText2.textColor = [HexColor colorWithHexString:@"F48F16"];
+    infoText3.textColor = [HexColor colorWithHexString:@"F48F16"];
+
     
 }
 
