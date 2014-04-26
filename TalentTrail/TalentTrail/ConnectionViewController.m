@@ -9,6 +9,7 @@
 #import "ConnectionViewController.h"
 #import "ConnectionCell.h"
 #import "SWRevealViewController.h"
+#import "ConnectionDetailViewController.h"
 @interface ConnectionViewController ()
 
 @end
@@ -98,6 +99,29 @@ NSArray *Pictures;
 {
     return 119;
 }
+
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"ConnectionDetail" sender:self];
+    
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Segue Identifier: %@", segue.identifier);
+    
+    if ([segue.identifier isEqualToString:@"ConnectionDetail"]) {
+        ConnectionDetailViewController *destViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        destViewController.firstName = (NSString*)[Names objectAtIndex:indexPath.row];
+        [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+        
+    }
+    
+}
+
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

@@ -68,6 +68,7 @@
 		DEFB76F81907A664001D171F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F71907A664001D171F /* HelpViewController.m */; };
 		DEFB76FB1907A674001D171F /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76FA1907A674001D171F /* FeedbackViewController.m */; };
 		DEFB76FE190B33CF001D171F /* JobDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76FD190B33CF001D171F /* JobDetailViewController.m */; };
+		DEFB7701190C50B0001D171F /* ConnectionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB7700190C50B0001D171F /* ConnectionDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +172,8 @@
 		DEFB76FA1907A674001D171F /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		DEFB76FC190B33CF001D171F /* JobDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobDetailViewController.h; sourceTree = "<group>"; };
 		DEFB76FD190B33CF001D171F /* JobDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobDetailViewController.m; sourceTree = "<group>"; };
+		DEFB76FF190C50B0001D171F /* ConnectionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDetailViewController.h; sourceTree = "<group>"; };
+		DEFB7700190C50B0001D171F /* ConnectionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,11 +344,13 @@
 		DE3E2F7218F99633001289EB /* Connections */ = {
 			isa = PBXGroup;
 			children = (
+				0A02C31418F9588600471161 /* ConnectionViewController.h */,
+				0A02C31518F9588600471161 /* ConnectionViewController.m */,
 				0A02C31018F9571500471161 /* ConnectionCell.h */,
 				0A02C31118F9571500471161 /* ConnectionCell.m */,
 				0A02C31318F9588600471161 /* ConnectionCell.xib */,
-				0A02C31418F9588600471161 /* ConnectionViewController.h */,
-				0A02C31518F9588600471161 /* ConnectionViewController.m */,
+				DEFB76FF190C50B0001D171F /* ConnectionDetailViewController.h */,
+				DEFB7700190C50B0001D171F /* ConnectionDetailViewController.m */,
 			);
 			name = Connections;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				DEFB76F41907A644001D171F /* SettingsViewController.m in Sources */,
 				0A1B127D18FA3E0C0047F80F /* EditProfileSkillsCell.m in Sources */,
 				0A1B128218FA47570047F80F /* EditProfileJobsCell.m in Sources */,
+				DEFB7701190C50B0001D171F /* ConnectionDetailViewController.m in Sources */,
 				DE3E2F5118F91E6E001289EB /* ProfileViewController.m in Sources */,
 				DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */,
 				0A1B129018FACE060047F80F /* DashboardDetailsControllerViewController.m in Sources */,
