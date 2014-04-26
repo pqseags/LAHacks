@@ -16,6 +16,12 @@
 
 @synthesize companyNameLabel;
 @synthesize companyName;
+@synthesize positionTitleLabel;
+@synthesize positionTitle;
+@synthesize requirementsText;
+@synthesize requirements;
+@synthesize description;
+@synthesize descriptionText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,6 +44,10 @@
     
     //get data
     companyNameLabel.text = companyName;
+    positionTitleLabel.text = positionTitle;
+    requirementsText.text = requirements;
+    descriptionText.text = description;
+    
 }
 
 - (void)didReceiveMemoryWarning

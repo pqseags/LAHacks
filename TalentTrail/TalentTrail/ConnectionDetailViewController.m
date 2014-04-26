@@ -14,9 +14,22 @@
 
 @implementation ConnectionDetailViewController
 @synthesize nameLabel;
-@synthesize firstName;
-@synthesize lastName;
+@synthesize positionLabel;
+@synthesize companyLabel;
+@synthesize emailLabel;
+@synthesize phoneLabel;
+@synthesize connectionImageView;
 
+@synthesize emailButton;
+@synthesize callButton;
+
+
+@synthesize firstName;
+@synthesize position;
+@synthesize company;
+@synthesize email;
+@synthesize phoneNumber;
+@synthesize picture;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,9 +50,21 @@
     //set back button arrow color
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     
+    //set button colors
+    emailButton.imageView.image = [emailButton.imageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [emailButton.imageView setTintColor:[UIColor blueColor]];
+    callButton.imageView.image = [callButton.imageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [callButton.imageView setTintColor:[UIColor blueColor]];
+    //need to reset button color after click!!!
+    
     
     //get data
     nameLabel.text = firstName;
+    positionLabel.text = position;
+    companyLabel.text = company;
+    connectionImageView.image = picture;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

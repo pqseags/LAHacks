@@ -10,9 +10,23 @@
 
 @interface ConnectionDetailViewController : UIViewController
 
-@property NSString * firstName;
-@property NSString * lastName;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *positionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *companyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *connectionImageView;
+
+@property (weak, nonatomic) IBOutlet UIButton *emailButton;
+@property (weak, nonatomic) IBOutlet UIButton *callButton;
+
+
+@property NSString * firstName;
+@property NSString * position;
+@property NSString * company;
+@property NSString * email;
+@property NSString * phoneNumber;
+@property UIImage * picture;
 
 @end

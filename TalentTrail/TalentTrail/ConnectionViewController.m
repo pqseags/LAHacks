@@ -115,10 +115,13 @@ NSArray *Pictures;
         ConnectionDetailViewController *destViewController = segue.destinationViewController;
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         destViewController.firstName = (NSString*)[Names objectAtIndex:indexPath.row];
+        destViewController.position =(NSString*)[Positions objectAtIndex:indexPath.row];
+        destViewController.company =(NSString*)[Jobs objectAtIndex:indexPath.row];
+        destViewController.picture =(UIImage*)[UIImage imageNamed:[Pictures objectAtIndex:indexPath.row]];
         [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
         
     }
-    
+
 }
 
 
