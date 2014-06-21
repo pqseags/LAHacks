@@ -457,6 +457,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = TalentTrail;
 				TargetAttributes = {
+					DE3E2F0718F91551001289EB = {
+						DevelopmentTeam = 8277Q8XWDG;
+					};
 					DE3E2F2B18F91552001289EB = {
 						TestTargetID = DE3E2F0718F91551001289EB;
 					};
@@ -684,6 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalentTrail/TalentTrail-Prefix.pch";
 				INFOPLIST_FILE = "TalentTrail/TalentTrail-Info.plist";
@@ -697,6 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TalentTrail/TalentTrail-Prefix.pch";
 				INFOPLIST_FILE = "TalentTrail/TalentTrail-Info.plist";
