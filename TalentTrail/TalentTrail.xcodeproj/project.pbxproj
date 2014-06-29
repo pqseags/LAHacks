@@ -64,6 +64,7 @@
 		DE3E2F8018F9C0A1001289EB /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE3E2F7F18F9C0A1001289EB /* DashboardCell.xib */; };
 		DE3E2F8418F9D95C001289EB /* DashboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8318F9D95C001289EB /* DashboardCell.m */; };
 		DE3E2F8718FA1C1B001289EB /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */; };
+		DEE70D2C1956422C00535B31 /* TypeFormApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE70D2B1956422C00535B31 /* TypeFormApplicationViewController.m */; };
 		DEFB76F41907A644001D171F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F31907A644001D171F /* SettingsViewController.m */; };
 		DEFB76F81907A664001D171F /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76F71907A664001D171F /* HelpViewController.m */; };
 		DEFB76FB1907A674001D171F /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFB76FA1907A674001D171F /* FeedbackViewController.m */; };
@@ -164,6 +165,8 @@
 		DE3E2F8318F9D95C001289EB /* DashboardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardCell.m; sourceTree = "<group>"; };
 		DE3E2F8518FA1C1B001289EB /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		DE3E2F8618FA1C1B001289EB /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		DEE70D2A1956422C00535B31 /* TypeFormApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeFormApplicationViewController.h; sourceTree = "<group>"; };
+		DEE70D2B1956422C00535B31 /* TypeFormApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeFormApplicationViewController.m; sourceTree = "<group>"; };
 		DEFB76F21907A644001D171F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		DEFB76F31907A644001D171F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		DEFB76F61907A664001D171F /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -246,6 +249,7 @@
 				DE3E2F7218F99633001289EB /* Connections */,
 				DE3E2F7B18F99B51001289EB /* Jobs */,
 				DE3E2F5518F920BA001289EB /* Profile */,
+				DEE70D291956420500535B31 /* TypeForm */,
 				DE3E2F2618F91551001289EB /* Images.xcassets */,
 				DE3E2F1218F91551001289EB /* Supporting Files */,
 			);
@@ -397,6 +401,15 @@
 			name = Jobs;
 			sourceTree = "<group>";
 		};
+		DEE70D291956420500535B31 /* TypeForm */ = {
+			isa = PBXGroup;
+			children = (
+				DEE70D2A1956422C00535B31 /* TypeFormApplicationViewController.h */,
+				DEE70D2B1956422C00535B31 /* TypeFormApplicationViewController.m */,
+			);
+			name = TypeForm;
+			sourceTree = "<group>";
+		};
 		DEFB76F11907A5EE001D171F /* Extra VCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,7 +467,7 @@
 		DE3E2F0018F91551001289EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = TalentTrail;
 				TargetAttributes = {
 					DE3E2F0718F91551001289EB = {
@@ -561,6 +574,7 @@
 				DE3E2F2218F91551001289EB /* FirstViewController.m in Sources */,
 				DE3E2F1818F91551001289EB /* main.m in Sources */,
 				0A40F4E118FA059E00355133 /* JobCell.m in Sources */,
+				DEE70D2C1956422C00535B31 /* TypeFormApplicationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +628,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -653,7 +666,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -713,7 +725,6 @@
 		DE3E2F4118F91552001289EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TalentTrail.app/TalentTrail";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -736,7 +747,6 @@
 		DE3E2F4218F91552001289EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TalentTrail.app/TalentTrail";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

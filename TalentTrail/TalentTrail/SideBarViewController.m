@@ -13,8 +13,10 @@
 
 @interface SideBarViewController ()
 @property (nonatomic, strong) NSArray *menuItems;
-@property (nonatomic, strong) NSArray *settingsMenuItems;
 @property (nonatomic, strong) NSArray *menuPictures;
+@property (nonatomic, strong) NSArray *menuSegues;
+
+@property (nonatomic, strong) NSArray *settingsMenuItems;
 @property (nonatomic, strong) NSArray *settingsMenuPictures;
 
 @property (nonatomic, strong) NSIndexPath * clickedIndexPath;
@@ -26,15 +28,23 @@
 @synthesize settingsMenuItems;
 @synthesize menuPictures;
 @synthesize settingsMenuPictures;
+@synthesize menuSegues;
 @synthesize clickedIndexPath;
+@synthesize tableView;
+@synthesize headerView;
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithStyle:style];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
     }
     return self;
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [tableView deselectRowAtIndexPath:[tableView indexPathForSelectedRow] animated:YES];
 }
 
 - (void)viewDidLoad
@@ -51,20 +61,23 @@
     //self.tableView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:1.0f];
     //self.tableView.separatorColor = [UIColor colorWithWhite:0.15f alpha:0.2f];
     
-    menuItems = @[@"dashboard", @"jobs", @"connections", @"profile"];
-    settingsMenuItems = @[@"settings", @"help", @"feedback", @"logout"];
-    menuPictures = @[@"dashboard.png", @"jobs.png", @"connections.png", @"profile.png"];
-    settingsMenuPictures = @[@"settings.png", @"help.png", @"feedback.png", @"logout.png"];
+    menuItems = @[@"Dashboard", @"Profile", @"My Matches", @"Analytics", @"Company Explorer"];
+    menuPictures = @[@"dashboard-25.png", @"user_male4-25.png", @"matches1-25.png", @"analytics3-25.png", @"search-25.png"];
+    menuSegues = @[@"revealDashboard", @"revealJobs", @"revealConnections", @"revealProfile"];
+    
+    settingsMenuItems = @[@"Feedback", @"Settings", @"Logout"];
+    settingsMenuPictures = @[@"feedback1-25.png", @"settings-25.png", @"logout1-25.png"];
     
     self.tableView.backgroundColor = [UIColor lightGrayColor];
     self.tableView.separatorColor = [UIColor lightGrayColor];
    
-//[HexColor colorWithHexString:@"F48F16"]
+
     
-    UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 20.0)];
-    view.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
-    [self.view addSubview:view];
-    
+    //make an orange bar up top for the status bar
+//    UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 20.0)];
+//    view.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
+//    [self.view addSubview:view];
+    headerView.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
     
 }
 
@@ -109,7 +122,7 @@
         cell.Item.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
         whiteImage = [UIImage imageNamed:[menuPictures objectAtIndex:indexPath.row]];
     }
-    else{
+    else{ //if (indexPath.section ==1)
         cell.Item.text = [[settingsMenuItems objectAtIndex:indexPath.row] capitalizedString];
         whiteImage = [UIImage imageNamed:[settingsMenuPictures objectAtIndex:indexPath.row]];
 
@@ -152,20 +165,8 @@
     clickedIndexPath = indexPath;
     
     
-    if (indexPath.section == 0){
-        if (indexPath.row == 0){
-            [self performSegueWithIdentifier:@"revealDashboard" sender:self];
-        }
-        else if (indexPath.row == 1){
-            [self performSegueWithIdentifier:@"revealJobs" sender:self];
-        }
-        else if (indexPath.row == 2){
-            [self performSegueWithIdentifier:@"revealConnections" sender:self];
-        }
-
-        else if (indexPath.row == 3){
-            [self performSegueWithIdentifier:@"revealProfile" sender:self];
-        }
+    if (indexPath.section == 0 && indexPath.row < [menuSegues count]){
+        [self performSegueWithIdentifier:menuSegues[indexPath.row] sender:self ];
     }
     
     else if (indexPath.section == 1){
