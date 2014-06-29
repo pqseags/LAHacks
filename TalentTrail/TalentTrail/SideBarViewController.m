@@ -63,13 +63,14 @@
     
     menuItems = @[@"Dashboard", @"Profile", @"My Matches", @"Analytics", @"Company Explorer"];
     menuPictures = @[@"dashboard-25.png", @"user_male4-25.png", @"matches1-25.png", @"analytics3-25.png", @"search-25.png"];
-    menuSegues = @[@"revealDashboard", @"revealJobs", @"revealConnections", @"revealProfile"];
+    menuSegues = @[@"revealDashboard", @"revealProfile", @"revealMatches", @"revealAnalysis", @"revealCompanyExplorer"];
     
     settingsMenuItems = @[@"Feedback", @"Settings", @"Logout"];
     settingsMenuPictures = @[@"feedback1-25.png", @"settings-25.png", @"logout1-25.png"];
     
-    self.tableView.backgroundColor = [UIColor lightGrayColor];
-    self.tableView.separatorColor = [UIColor lightGrayColor];
+    self.tableView.backgroundColor = [UIColor darkGrayColor];
+    self.tableView.separatorColor = [UIColor darkGrayColor];
+    self.view.backgroundColor = [UIColor darkGrayColor];
    
 
     
@@ -77,7 +78,7 @@
 //    UIView* view = [[UIView alloc]initWithFrame:CGRectMake(0, -20, self.view.frame.size.width, 20.0)];
 //    view.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
 //    [self.view addSubview:view];
-    headerView.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
+    headerView.backgroundColor = [HexColor colorWithHexString:@"F48F16"Alpha:0.8f];
     
 }
 
@@ -116,7 +117,7 @@
     
     SideBarCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     */
-    cell.backgroundColor =[UIColor lightGrayColor];
+    cell.backgroundColor =[UIColor darkGrayColor];
     UIImage * whiteImage = [[UIImage alloc] init];
     if (indexPath.section ==0){
         cell.Item.text = [[menuItems objectAtIndex:indexPath.row] capitalizedString];
@@ -130,6 +131,7 @@
     
     //set text and picture color
     cell.Item.textColor = [UIColor whiteColor];
+    cell.Item.font = [UIFont fontWithName:@"Avenir" size:16];
     cell.Picture.image = [whiteImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     cell.Picture.tintColor = [UIColor whiteColor];
     return cell;
@@ -139,15 +141,17 @@
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
 {
     // Background color
-    
+    //view.backgroundColor = [HexColor colorWithHexString:@"F48F16"];
     
     // Text Color
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     [header.textLabel setTextColor:[UIColor whiteColor]];
+    header.textLabel.font = [UIFont fontWithName:@"Avenir Next Regular" size:header.textLabel.font.pointSize];
     
     // Another way to set the background color
     // Note: does not preserve gradient effect of original header
-    // header.contentView.backgroundColor = [UIColor blackColor];
+    header.contentView.backgroundColor = [HexColor colorWithHexString:@"F48F16"Alpha:0.7f];
+    
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
