@@ -1,5 +1,5 @@
 //
-//  DashboardViewController.h
+//  AnalyticsViewController.h
 //  TalentTrail
 //
 //  Created by Parker Seagren on 6/29/14.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DashboardViewController : UIViewController <UICollectionViewDelegate , UICollectionViewDataSource>
+@interface AnalyticsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
-@property (weak, nonatomic) IBOutlet UICollectionView *gridView;
 
 @end

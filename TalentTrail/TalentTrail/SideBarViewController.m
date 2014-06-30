@@ -18,6 +18,8 @@
 
 @property (nonatomic, strong) NSArray *settingsMenuItems;
 @property (nonatomic, strong) NSArray *settingsMenuPictures;
+@property (nonatomic, strong) NSArray *settingsSegues;
+
 
 @property (nonatomic, strong) NSIndexPath * clickedIndexPath;
 
@@ -29,6 +31,7 @@
 @synthesize menuPictures;
 @synthesize settingsMenuPictures;
 @synthesize menuSegues;
+@synthesize settingsSegues;
 @synthesize clickedIndexPath;
 @synthesize tableView;
 @synthesize headerView;
@@ -63,10 +66,12 @@
     
     menuItems = @[@"Dashboard", @"Profile", @"My Matches", @"Analytics", @"Company Explorer"];
     menuPictures = @[@"dashboard-25.png", @"user_male4-25.png", @"matches1-25.png", @"analytics3-25.png", @"search-25.png"];
-    menuSegues = @[@"revealDashboard", @"revealProfile", @"revealMatches", @"revealAnalysis", @"revealCompanyExplorer"];
+    menuSegues = @[@"revealDashboard", @"revealProfile", @"revealMatches", @"revealAnalytics", @"revealCompanyExplorer"];
     
     settingsMenuItems = @[@"Feedback", @"Settings", @"Logout"];
     settingsMenuPictures = @[@"feedback1-25.png", @"settings-25.png", @"logout1-25.png"];
+    settingsSegues = @[@"revealFeedback", @"revealSettings", @"logout"];
+
     
     self.tableView.backgroundColor = [UIColor darkGrayColor];
     self.tableView.separatorColor = [UIColor darkGrayColor];
@@ -173,27 +178,10 @@
         [self performSegueWithIdentifier:menuSegues[indexPath.row] sender:self ];
     }
     
-    else if (indexPath.section == 1){
-        if (indexPath.row == 0){
-            //Settings
-            [self performSegueWithIdentifier:@"revealSettings" sender:self];
+    else if (indexPath.section == 1 && indexPath.row < [settingsSegues count]){
+        //[self performSegueWithIdentifier:settingsSegues[indexPath.row] sender:self];
+        if (indexPath.row == 2)[self performSegueWithIdentifier:@"logout" sender:self];
 
-        }
-        else if (indexPath.row == 1){
-            //Help
-            [self performSegueWithIdentifier:@"revealHelp" sender:self];
-
-        }
-        else if (indexPath.row == 2){
-            //Feedback
-            [self performSegueWithIdentifier:@"revealFeedback" sender:self];
-
-        }
-        
-        else if (indexPath.row == 3){
-            //Logout
-            [self performSegueWithIdentifier:@"logout" sender:self];
-        }
     }
 
     

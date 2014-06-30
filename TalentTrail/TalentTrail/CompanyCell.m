@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 TalentTrail. All rights reserved.
 //
 
-#import "DashboardCell.h"
+#import "CompanyCell.h"
 
-@implementation DashboardCell
+@implementation CompanyCell
 @synthesize companyImage = _companyImage;
 @synthesize companyLabel = _companyLabel;
 
@@ -18,7 +18,7 @@
     if (self) {
         // Initialization code
         
-        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"DashboardCell" owner:self options:nil];
+        NSArray *arrayOfViews = [[NSBundle mainBundle] loadNibNamed:@"CompanyCell" owner:self options:nil];
         
         if ([arrayOfViews count] < 1) {
             return nil;

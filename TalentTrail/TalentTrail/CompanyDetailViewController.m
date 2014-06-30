@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 TalentTrail. All rights reserved.
 //
 
-#import "DashboardDetailsControllerViewController.h"
+#import "CompanyDetailViewController.h"
 
-@interface DashboardDetailsControllerViewController ()
+@interface CompanyDetailViewController ()
 
 @end
 
-@implementation DashboardDetailsControllerViewController
+@implementation CompanyDetailViewController
 @synthesize Req;
 @synthesize Info;
 @synthesize ReqField;

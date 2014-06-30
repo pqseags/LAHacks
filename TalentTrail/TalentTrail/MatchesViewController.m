@@ -1,24 +1,21 @@
 //
-//  DashboardViewController.m
+//  MatchesViewController.m
 //  TalentTrail
 //
 //  Created by Parker Seagren on 6/29/14.
 //  Copyright (c) 2014 TalentTrail. All rights reserved.
 //
 
-#import "DashboardViewController.h"
+#import "MatchesViewController.h"
 #import "SWRevealViewController.h"
 #import "HexColor.h"
 
-@interface DashboardViewController ()
+@interface MatchesViewController ()
 
 @end
 
-@implementation DashboardViewController
-
+@implementation MatchesViewController
 @synthesize sidebarButton;
-@synthesize gridView;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,7 +32,7 @@
     // Do any additional setup after loading the view.
     
     
-     self.title = @"Dashboard";
+    self.title = @"Matches";
     
     //--------------------SIDE BAR----------------------
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
@@ -46,14 +43,7 @@
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     //____________________SIDE BAR_______________________
-    
-    //configure navigation controller bar
-    self.navigationController.navigationBar.barTintColor = [HexColor colorWithHexString:@"F48F16"];
-    self.navigationController.navigationBar.titleTextAttributes= @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 
-    //__________________COLLECTION VIEW STUFF_____________________
-    gridView.backgroundColor = [UIColor lightGrayColor];
-    
 }
 
 - (void)didReceiveMemoryWarning

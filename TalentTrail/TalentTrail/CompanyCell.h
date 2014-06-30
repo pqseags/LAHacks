@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DashboardCell : UICollectionViewCell
+@interface CompanyCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *companyImage;
 @property (weak, nonatomic) IBOutlet UILabel *companyLabel;
 

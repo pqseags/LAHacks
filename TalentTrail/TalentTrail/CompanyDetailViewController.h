@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DashboardDetailsControllerViewController : UIViewController
+@interface CompanyDetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *ReqField;
 @property (weak, nonatomic) IBOutlet UITextView *InfoField;
 @property (weak, nonatomic) NSString *Req;
